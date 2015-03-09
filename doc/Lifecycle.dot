@@ -1,0 +1,35 @@
+digraph "Lifecycle" {
+    New [shape=box];
+    Candidate [shape=box];
+    DataResource [shape=box];
+    Accepted [shape=box];
+    Loaded [shape=box];
+    Review [shape=box];
+    Reload [shape=box];
+    Rejected [shape=box];
+
+    generate [shape=ellipse,style=filled,color=red];
+    update [shape=ellipse,style=filled,color=red];
+    mark_candidate [shape=ellipse];
+    accept [shape=ellipse,style=filled,color=blue];
+    create_data_resource [shape=ellipse];
+    mark_accepted [shape=ellipse];
+    load_data_resource [shape=ellipse,style=filled,color=blue];
+    mark_updated [shape=ellipse];
+    reject [shape=ellipse,style=filled,color=blue];
+    mark_rejected [shape=ellipse];
+    mark_reviewed_update [shape=ellipse,style=filled,color=blue];
+    mark_reviewed_noupdate [shape=ellipse,style=filled,color=blue];
+
+
+    generate -> New;
+    New -> mark_candidate -> Candidate;
+    Candidate -> accept -> create_data_resource -> DataResource;
+    DataResource -> mark_accepted -> Accepted;
+    Accepted -> load_data_resource -> Loaded;
+    Loaded -> update -> mark_updated -> Review;
+    Review -> mark_reviewed_update -> Reload;
+    Reload -> load_data_resource;
+    Review -> mark_reviewed_noupdate ->  Loaded;
+    Candidate -> reject -> mark_rejected -> Rejected;
+}

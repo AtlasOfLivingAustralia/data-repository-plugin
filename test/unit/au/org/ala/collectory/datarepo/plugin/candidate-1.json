@@ -1,0 +1,37 @@
+{
+   "uid": "cdr1",
+   "phone": null,
+   "dataProvider": null,
+   "state": "Victoria",
+   "issueId": "2",
+   "lifecycle": "New",
+   "name": "Test Resource 1",
+   "longitude": -1,
+   "websiteUrl": "http://www.nowhere.com.xx",
+   "alaPublicUrl": "http://localhost:8080/public/show/cdr1",
+   "lastModified": null,
+   "primaryContact": "Mr Fred Nurke, +99 555 555 555, nobody@nowhere.com.xx",
+   "lastUpdated": null,
+   "issueUrl": "urn:x-test:2",
+   "dataResource": null,
+   "connectionParameters": {
+      "uid": 85,
+      "endpoint": "http://localhost:8080/nowhere"
+   },
+   "guid": "urn:lsid:ala.org.au:cdr:1",
+   "address": {
+      "street": "101 Collins St",
+      "state": "Victoria",
+      "postcode": "3000",
+      "postBox": null,
+      "country": "Australia",
+      "city": "Melbourne"
+   },
+   "pubDescription": "Public description 1",
+   "email": null,
+   "techDescription": "Technical description 1",
+   "dateCreated": null,
+   "latitude": -1,
+   "userLastModified": "nobody@nowhere.com.xx",
+   "notes": "First notes"
+}

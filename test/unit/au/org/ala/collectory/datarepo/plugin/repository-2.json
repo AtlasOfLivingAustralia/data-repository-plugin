@@ -1,0 +1,16 @@
+{
+   "uid": "dx1",
+   "dataProvider": null,
+   "lastChecked": "1970-01-04T11:20:00Z",
+   "lastUpdated": null,
+   "connectionParameters": {"uri": "nowhere@at.all"},
+   "guid": "urn:lsid:ala.org.au:dr:1",
+   "pubDescription": "Public description 1",
+   "scannerClass": "au.org.ala.collectory.datarepo.sources.NullScanner",
+   "name": "Test repository 2",
+   "techDescription": "Technical description 1",
+   "dateCreated": null,
+   "userLastModified": "nobody@nowhere.com.xx",
+   "notes": "First notes",
+   "websiteUrl": "http://www.nowhere.com.xx"
+}

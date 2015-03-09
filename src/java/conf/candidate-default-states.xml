@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<machine name="candidate-default" start="New">
+    <description>Default state machine for handling candidates</description>
+    <state name="New">
+        <description>A newly created candidate</description>
+    </state>
+    <state name="Candidate">
+        <description>A candidate for inclusion in the ALA, yet to be examined</description>
+        <label>tag</label>
+    </state>
+    <state name="DataResource">
+        <description>A candidate with a created data resource</description>
+    </state>
+    <state name="Accepted">
+        <description>An accepted candidate</description>
+    </state>
+    <state name="Error">
+        <description>A candidate that has ended up in some sort of impossible state</description>
+    </state>
+    <event name="candidate"/>
+    <event name="accept"/>
+    <event name="created_data_resource"/>
+    <action name="create_issue" method="createIssueAction" error="Error"/>
+    <action name="create_data_resource" method="createDataResourceAction" error="Error"/>
+    <action name="accept" method="acceptCandidateAction" error="Error"/>
+    <arc origin="New" destination="Candidate" event="candidate" action="create_issue">
+        <tag>candidate</tag>
+    </arc>
+    <arc origin="Candidate" destination="DataResource" event="accept" action="create_data_resource" labelKey="candidate.label.accept" descKey="candidate.label.accept.desc">
+        <description>Create a data resource to go with a candidate and mark it as accepted</description>
+    </arc>
+    <arc origin="DataResource" destination="Accepted" event="created_data_resource" action="accept">
+        <description>Once the data resource has been created, mark the candidate as accepted</description>
+        <tag>accepted</tag>
+    </arc>
+
+</machine>
