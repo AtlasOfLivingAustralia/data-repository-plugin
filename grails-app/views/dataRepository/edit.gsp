@@ -67,7 +67,7 @@
 
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="dataProvider.uid"><g:message code="candidate.dataProvider.label"
+                        <label for="dataProvider.uid"><g:message code="dataRepository.dataProvider.label"
                                                                  default="Data provider"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'dataProvider', 'errors')}">
@@ -76,7 +76,7 @@
                                   optionKey="uid"
                                   noSelection="${['null': 'Select a data provider']}"
                                   value="${instance.dataProvider?.uid}" class="input-xlarge"/>
-                        <cl:helpText code="candidate.dataProvider"/>
+                        <cl:helpText code="dataRepository.dataProvider"/>
                         <cl:helpTD/>
                     </td>
                 </tr>
@@ -89,46 +89,46 @@
                     </td>
                 <tr class="name"><td colspan="2"><h2><g:message code="providerGroup.show.title.description"
                                                                 default="Description"/></h2></td></tr>
-                <!-- pub description -->    <tr class="prop">
+                <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="pubDescription"><g:message code="candidate.pubDescription.label"
+                        <label for="pubDescription"><g:message code="providerGroup.pubDescription.label"
                                                                default="Public Description"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: command, field: 'pubDescription', 'errors')}">
                         <g:textArea name="pubDescription" cols="40" rows="5" value="${instance?.pubDescription}"/>
-                        <cl:helpText code="institution.pubDescription"/>
-                    </td>
-                    <cl:helpTD/>
-                </tr>
-
-                <!-- tech description -->   <tr class="prop">
-                    <td valign="top" class="name">
-                        <label for="techDescription"><g:message code="candidate.techDescription.label"
-                                                                default="Technical Description"/></label>
-                    </td>
-                    <td valign="top" class="value ${hasErrors(bean: command, field: 'techDescription', 'errors')}">
-                        <g:textArea name="techDescription" cols="40" rows="5" value="${instance?.techDescription}"/>
-                        <cl:helpText code="institution.techDescription"/>
+                        <cl:helpText code="dataRepository.pubDescription"/>
                     </td>
                     <cl:helpTD/>
                 </tr>
 
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="connectionParameters"><g:message code="candidate.connectionParameters.label"
+                        <label for="techDescription"><g:message code="providerGroup.techDescription.label"
+                                                                default="Technical Description"/></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: command, field: 'techDescription', 'errors')}">
+                        <g:textArea name="techDescription" cols="40" rows="5" value="${instance?.techDescription}"/>
+                        <cl:helpText code="dataRepository.techDescription"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="connectionParameters"><g:message code="dataRepository.connectionParameters.label"
                                                                      default="ConnectionParameters"/></label>
                     </td>
                     <td valign="top"
                         class="value ${hasErrors(bean: instance, field: 'connectionParameters', 'errors')}">
                         <g:textArea name="connectionParameters" cols="40" rows="5"
                                      value="${instance?.connectionParameters}"/>
-                        <cl:helpText code="dataResource.connectionParameters"/>
+                        <cl:helpText code="dataRepository.connectionParameters"/>
                     </td>
                 </tr>
 
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="scannerClass"><g:message code="candidate.scannerClass.label"
+                        <label for="scannerClass"><g:message code="dataRepository.scannerClass.label"
                                                              default="Scanner"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'scannerClass', 'errors')}">
@@ -138,7 +138,7 @@
                                   optionValue="name"
                                   noSelection="${['null': 'Select a scanner']}"
                                   value="${instance.scannerClass}" class="input-xlarge"/>
-                        <cl:helpText code="candidate.scannerClass"/>
+                        <cl:helpText code="dataRepository.scannerClass"/>
                         <cl:helpTD/>
                     </td>
                 </tr>
@@ -150,9 +150,9 @@
                     </td>
                     <td valign="top" class="value">
                         <g:textField name="lastChecked" value="${instance?.lastChecked}"/>
-                        <cl:helpText code="dataResource.lastChecked"/>
+                        <cl:helpText code="dataRepository.lastChecked"/>
+                        <cl:helpTD/>
                     </td>
-                    <cl:helpTD/>
                 </tr>
 
                 </tbody>
@@ -161,9 +161,9 @@
 
         <div class="buttons">
             <span class="button"><input type="submit" name="_action_save"
-                                        value="${message(code: "candidate.button.save")}" class="save"></span>
+                                        value="${message(code: "shared.button.update")}" class="save"></span>
             <span class="button"><input type="submit" name="_action_cancel"
-                                        value="${message(code: "candidate.button.cancel")}" class="cancel"></span>
+                                        value="${message(code: "shared.button.cancel")}" class="cancel"></span>
         </div>
     </g:form>
 </div>

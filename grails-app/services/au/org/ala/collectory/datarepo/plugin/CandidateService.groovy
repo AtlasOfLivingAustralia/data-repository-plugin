@@ -138,7 +138,7 @@ class CandidateService {
         state "Reload", {
             titleKey = "candidate.lifecycle.reload"
             title = "Reload"
-            descriptionKey = "candidate.lifecycle.review.description"
+            descriptionKey = "candidate.lifecycle.reload.description"
             description = "The data source needs to be reloaded"
             tags = [ "load" ]
             action = { cdr ->

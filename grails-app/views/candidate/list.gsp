@@ -34,9 +34,9 @@
                 <g:sortableColumn property="lifecycle"
                                   title="${message(code: 'candidate.lifecycle.label', default: 'Type')}"/>
                 <g:sortableColumn property="dataProvider"
-                                  title="${message(code: 'dataResource.dataProvider.label', default: 'Provider')}"/>
+                                  title="${message(code: 'candidate.dataProvider.label', default: 'Provider')}"/>
                 <g:sortableColumn property="dataResource"
-                                  title="${message(code: 'dataResource.label', default: 'Resource')}"/>
+                                  title="${message(code: 'candidate.dataResource.label', default: 'Resource')}"/>
             </tr>
             </thead>
             <tbody>

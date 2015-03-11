@@ -68,7 +68,7 @@
                 <tr class="prop">
                     <td valign="top" class="name">
                         <label for="dataProvider.uid"><g:message code="candidate.dataProvider.label"
-                                                                 default="Data provider"/></label>
+                                                                 default="Data Provider"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'dataProvider', 'errors')}">
                         <g:select name="dataProvider.uid"
@@ -83,7 +83,7 @@
                 <tr class="prop">
                     <td valign="top" class="name">
                         <label for="dataResource.uid"><g:message code="candidate.dataResource.label"
-                                                                 default="Data resource"/></label>
+                                                                 default="Data Resource"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'dataProvider', 'errors')}">
                         <g:select name="dataResource.uid"
@@ -114,40 +114,40 @@
                     </td>
                 <tr class="name"><td colspan="2"><h2><g:message code="providerGroup.show.title.description"
                                                                 default="Description"/></h2></td></tr>
-                <!-- pub description -->    <tr class="prop">
+                <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="pubDescription"><g:message code="candidate.pubDescription.label"
+                        <label for="pubDescription"><g:message code="providerGroup.pubDescription.label"
                                                                default="Public Description"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: command, field: 'pubDescription', 'errors')}">
                         <g:textArea name="pubDescription" cols="40" rows="5" value="${instance?.pubDescription}"/>
-                        <cl:helpText code="institution.pubDescription"/>
+                        <cl:helpText code="candidate.pubDescription"/>
                     </td>
                     <cl:helpTD/>
                 </tr>
 
-                <!-- tech description -->   <tr class="prop">
+                <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="techDescription"><g:message code="candidate.techDescription.label"
+                        <label for="techDescription"><g:message code="providerGroup.techDescription.label"
                                                                 default="Technical Description"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: command, field: 'techDescription', 'errors')}">
                         <g:textArea name="techDescription" cols="40" rows="5" value="${instance?.techDescription}"/>
-                        <cl:helpText code="institution.techDescription"/>
+                        <cl:helpText code="candidate.techDescription"/>
                     </td>
                     <cl:helpTD/>
                 </tr>
                 <tr class="name"><td colspan="2"><h2><g:message code="candidate.location.label"
                                                                 default="Location"/></h2></td></tr>
-                <!-- address -->            <tr class="prop">
+                <tr class="prop">
                     <td valign="top" class="name">
-                        <g:message code="candidate.address.label" default="Address"/>
+                        <g:message code="address.label" default="Address"/>
                     </td>
                     <td valign="top">
                         <table class="shy">
                             <tr class='prop'>
                                 <td valign="top" class="name">
-                                    <label for="address.street"><g:message code="candidiate.address.street.label"
+                                    <label for="address.street"><g:message code="providerGroup.address.street.label"
                                                                            default="Street"/></label>
                                 </td>
                                 <td valign="top"
@@ -158,8 +158,8 @@
                             </tr>
                             <tr class='prop'>
                                 <td valign="top" class="name">
-                                    <label for="address.postBox"><g:message code="candidate.address.postBox.label"
-                                                                            default="Post box"/></label>
+                                    <label for="address.postBox"><g:message code="providerGroup.address.postal.labell"
+                                                                            default="Postal"/></label>
                                 </td>
                                 <td valign="top"
                                     class="value ${hasErrors(bean: instance, field: 'address.postBox', 'errors')}">
@@ -169,7 +169,7 @@
                             </tr>
                             <tr class='prop'>
                                 <td valign="top" class="name">
-                                    <label for="address.city"><g:message code="candidate.address.city.label"
+                                    <label for="address.city"><g:message code="providerGroup.address.city.label"
                                                                          default="City"/></label>
                                 </td>
                                 <td valign="top"
@@ -180,7 +180,7 @@
                             </tr>
                             <tr class='prop'>
                                 <td valign="top" class="name">
-                                    <label for="address.state"><g:message code="candidate.address.state.label"
+                                    <label for="address.state"><g:message code="providerGroup.address.state.label"
                                                                           default="State or territory"/></label>
                                 </td>
                                 <td valign="top"
@@ -202,7 +202,7 @@
                             </tr>
                             <tr class='prop'>
                                 <td valign="top" class="name">
-                                    <label for="address.country"><g:message code="candidate.address.country.label"
+                                    <label for="address.country"><g:message code="providerGroup.address.country.label"
                                                                             default="Country"/></label>
                                 </td>
                                 <td valign="top"
@@ -217,7 +217,7 @@
                 </tr>
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="state"><g:message code="candidate.state.label" default="State"/></label>
+                        <label for="state"><g:message code="providerGroup.state.label" default="State"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'state', 'errors')}">
                         <g:textField name="state" maxlength="45" value="${instance?.state}"/>
@@ -225,7 +225,7 @@
                 </tr>
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="state"><g:message code="candidate.email.label" default="Email"/></label>
+                        <label for="state"><g:message code="providerGroup.email.label" default="Email"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'email', 'errors')}">
                         <g:textField name="email" maxlength="45" value="${instance?.email}"/>
@@ -233,7 +233,7 @@
                 </tr>
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="state"><g:message code="candidate.phone.label" default="Phone"/></label>
+                        <label for="state"><g:message code="providerGroup.phone.label" default="Phone"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'phone', 'errors')}">
                         <g:textField name="phone" maxlength="45" value="${instance?.phone}"/>
@@ -241,14 +241,14 @@
                 </tr>
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="latitude"><g:message code="candidate.latitude.label" default="Latitude"/>
+                        <label for="latitude"><g:message code="providerGroup.latitude.label" default="Latitude"/>
                             <br/><span class=hint>(decimal degrees)</span>
                         </label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'latitude', 'errors')}">
                         <g:textField id="latitude" name="latitude"
                                      value="${cl.numberIfKnown(number: instance.latitude)}"/>
-                        <cl:helpText code="collection.latitude"/>
+                        <cl:helpText code="candidate.latitude"/>
                     </td>
                     <cl:helpTD/>
                 </tr>
@@ -257,14 +257,14 @@
                 <tr class="prop">
                     <td valign="top" class="name">
                         <label for="longitude">
-                            <g:message code="candidate.longitude.label" default="Longitude"/>
+                            <g:message code="providerGroup.longitude.label" default="Longitude"/>
                             <br/><span class=hint>(decimal degrees)</span>
                         </label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'longitude', 'errors')}">
                         <g:textField id="longitude" name="longitude"
                                      value="${cl.numberIfKnown(number: instance.longitude)}"/>
-                        <cl:helpText code="collection.longitude"/>
+                        <cl:helpText code="candidate.longitude"/>
                     </td>
                     <cl:helpTD/>
                 </tr>
@@ -277,7 +277,9 @@
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'primaryContact', 'errors')}">
                         <g:textField name="primaryContact" maxlength="256" value="${instance?.primaryContact}"/>
+                        <cl:helpText code="candidate.primaryContact"/>
                     </td>
+                    <cl:helpTD/>
                 </tr>
                 <!-- Connection information -->
                 <tr class="prop">
@@ -294,12 +296,12 @@
                 </tr>
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="lastModified"><g:message code="dataResource.lastModified.label"
+                        <label for="lastModified"><g:message code="candidate.lastModified.label"
                                                              default="Last modified"/></label>
                     </td>
                     <td valign="top" class="value">
                         <g:textField name="lastModified" value="${instance?.lastModified}"/>
-                        <cl:helpText code="dataResource.lastModified"/>
+                        <cl:helpText code="candidate.lastModified"/>
                     </td>
                     <cl:helpTD/>
                 </tr>
@@ -310,9 +312,9 @@
 
         <div class="buttons">
             <span class="button"><input type="submit" name="_action_save"
-                                        value="${message(code: "candidate.button.save")}" class="save"></span>
+                                        value="${message(code: "shared.button.update")}" class="save"></span>
             <span class="button"><input type="submit" name="_action_cancel"
-                                        value="${message(code: "candidate.button.cancel")}" class="cancel"></span>
+                                        value="${message(code: "shared.button.cancel")}" class="cancel"></span>
         </div>
     </g:form>
 </div>

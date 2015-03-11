@@ -108,7 +108,7 @@
             <h2><g:message code="dataresource.show.title02"/></h2>
             <cl:formattedText body="${instance.connectionParameters ?: 'Not provided'}"/>
             <p><span class="category"><g:message
-                    code="dataresource.show.lc"/>:</span> ${fieldValue(bean: instance, field: "lastModified")}</p>
+                    code="candidate.show.lastModified"/>:</span> ${fieldValue(bean: instance, field: "lastModified")}</p>
         </div>
 
         <!-- description -->

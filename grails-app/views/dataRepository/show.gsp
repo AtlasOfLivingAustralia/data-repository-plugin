@@ -50,7 +50,7 @@
 
                 <!-- Provider -->
                 <p>
-                <span class="category"><g:message code="candidate.show.dataProvider" /></span><br/>
+                <span class="category"><g:message code="dataRepository.show.dataProvider" /></span><br/>
                 <cl:valueOrOtherwise value="${instance.dataProvider}"><g:link controller="dataProvider" action="show" params="[id: instance.dataProvider?.uid]">${instance.dataProvider?.name}</g:link></cl:valueOrOtherwise>
                 </p>
 
@@ -78,13 +78,13 @@
               </div>
 
               <div class="show-section well">
-                  <h2><g:message code="candidate.show.title.connect" /></h2>
+                  <h2><g:message code="dataRepository.show.title.connect" /></h2>
                   <!-- Connection -->
-                  <p><span class="category"><g:message code="candidate.connectionParameters.label" />:</span> ${fieldValue(bean: instance, field: "connectionParameters")}</p>
+                  <p><span class="category"><g:message code="dataRepository.show.connectionParameters" />:</span> ${fieldValue(bean: instance, field: "connectionParameters")}</p>
                   <!-- Scanner -->
-                  <p><span class="category"><g:message code="candidate.scannerClass.label" />:</span> ${fieldValue(bean: instance, field: "scannerClass")}</p>
+                  <p><span class="category"><g:message code="dataRepository.show.scannerClass" />:</span> ${fieldValue(bean: instance, field: "scannerClass")}</p>
                   <!-- Last checked on -->
-                  <p><span class="category"><g:message code="dataresource.show.lc" />: </span> ${fieldValue(bean: instance, field: "lastChecked")}</p>
+                  <p><span class="category"><g:message code="dataRepository.show.lastChecked" />: </span> ${fieldValue(bean: instance, field: "lastChecked")}</p>
 
               </div>
 
