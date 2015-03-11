@@ -85,7 +85,7 @@ class DataRepositoryController {
     }
 
     def edit = {
-        def instance = DataRepositoryResource.findByUid(params.uid)
+        def instance = DataRepository.findByUid(params.uid)
         if (!instance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'dataRepository.label', default: 'Data Repository'), params.uid])}"
             redirect(action: "list")
@@ -140,17 +140,17 @@ class DataRepositoryController {
     def getEntity = {
         if (params.uid) {
             log.debug "Get with uid ${params.uid}"
-            def instance = DataRepositoryResource.findByUid(params.uid)
+            def instance = DataRepository.findByUid(params.uid)
             if (!instance)
                 return wsError("Invalid uid ${params.uid}")
             addContentLocation instance
             addLastModifiedHeader instance
-            instance = DataRepositoryervice.read(instance)
+            instance = dataRepositoryService.read(instance)
             response.addHeader HttpHeaders.VARY, HttpHeaders.ACCEPT
             render instance
         } else {
             log.debug "Get list}"
-            def results = DataRepositoryResource.list([sort: 'name'])
+            def results = DataRepository.list([sort: 'name'])
             def summaries = results.collect(summary) as JSON
             render summaries
         }

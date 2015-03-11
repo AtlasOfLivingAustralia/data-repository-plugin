@@ -64,7 +64,7 @@ abstract class Scanner {
      */
     static List<Class<Scanner>> list() {
         [
-                [scannerClass: NullScanner.class, name: "{NullScanner.NAME} - {NullScanner.DESCRIPTION}"]
+                [scannerClass: NullScanner.class, name: "${NullScanner.NAME} - ${NullScanner.DESCRIPTION}"]
         ]
     }
 

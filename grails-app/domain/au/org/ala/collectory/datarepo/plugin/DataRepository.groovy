@@ -52,6 +52,7 @@ class DataRepository implements Serializable {
         websiteUrl(nullable:true, maxSize:256)
         connectionParameters(nullable:true)
         scannerClass(nullable: false)
+        lastChecked(nullable:true)
     }
 
     // String properties for updating
@@ -68,7 +69,14 @@ class DataRepository implements Serializable {
      */
     def update(obj) {
         this.properties[stringProperties] = obj
-        this.scannerClass = obj.scannerClass ? Class.forName(obj.scannerClass) : null
+        if (obj.scannerClass == null || obj.scannerClass == JSONObject.NULL)
+            this.scannerClass = null
+        else {
+            def sc = obj.scannerClass
+            if (sc.startsWith("class "))
+                sc = sc.substring(6);
+            this.scannerClass = Class.forName(sc)
+        }
         this.dataProvider = obj.dataProvider == JSONObject.NULL || obj.dataProvider?.uid == null ? null : DataProvider.findByUid(obj.dataProvider.uid)
         this.connectionParameters = obj.connectionParameters?.toString()
         if (obj.lastChecked)

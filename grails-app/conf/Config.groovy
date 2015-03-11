@@ -34,7 +34,7 @@ log4j = {
     //}
     debug  'grails.app.services.au.org.ala.collectory.datarepo',
            'au.org.ala.collectory.state',
-            'grails.app.controllers.au.org.ala.collectory.datarepo'
+           'grails.app.controllers.au.org.ala.collectory.datarepo'
     error  'org.codehaus.groovy.grails.web.servlet',  //  controllers
            'org.codehaus.groovy.grails.web.mapping.filter', // URL mapping
            'org.codehaus.groovy.grails.web.mapping' // URL mapping

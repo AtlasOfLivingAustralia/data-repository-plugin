@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="layout" content="${grailsApplication.config.ala.skin}"/>
     <g:set var="entityName" value="${instance.ENTITY_TYPE}"/>
-    <g:set var="entityNameLower" value="${cl.controller(type: instance.ENTITY_TYPE)}"/>
+    <g:set var="entityNameLower" value="${drp.controller(type: instance.ENTITY_TYPE)}"/>
     <title><g:message code="default.show.label" args="[entityName]"/></title>
 </head>
 
@@ -20,8 +20,8 @@
 <div class="nav">
 
     <p class="pull-right">
-        <span class="button"><drp:jsonSummaryLink uid="${instance.uid}"/></span>
-        <span class="button"><drp:jsonDataLink uid="${instance.uid}"/></span>
+        <span class="button"><drp:jsonSummaryLink entity="${entityNameLower}" uid="${instance.uid}"/></span>
+        <span class="button"><drp:jsonDataLink entity="${entityNameLower}" uid="${instance.uid}"/></span>
     </p>
 
     <ul>
@@ -196,8 +196,8 @@
                                                      value="${message(code: 'default.button.delete.label', default: 'Delete')}"
                                                      onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');"/></span>
             </cl:ifGranted>
-            <span class="button"><drp:jsonSummaryLink uid="${instance.uid}"/></span>
-            <span class="button"><drp:jsonDataLink uid="${instance.uid}"/></span>
+            <span class="button"><drp:jsonSummaryLink entity="${entityNameLower}" uid="${instance.uid}"/></span>
+            <span class="button"><drp:jsonDataLink entity="${entityNameLower}" uid="${instance.uid}"/></span>
         </g:form>
     </div>
 </div>

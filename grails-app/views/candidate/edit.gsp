@@ -287,7 +287,7 @@
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: command, field: 'connectionParameters', 'errors')}">
                         <g:textArea name="connectionParameters" cols="40" rows="5"
-                                    value="${instance?.techDescription}"/>
+                                    value="${instance?.connectionParameters}"/>
                         <cl:helpText code="candidate.connectionParameters"/>
                     </td>
                     <cl:helpTD/>

@@ -5,8 +5,8 @@ class DataRepositoryUrlMappings {
         "/ws/candidate/$uid?(.$format)?" (controller:'candidate') {
             action = [HEAD: 'head', GET:'getEntity', PUT:'saveEntity', DELETE:'delete', POST:'saveEntity']
         }
-        "/ws/candidate/summary" (controller:'candidate') {
-            action = [HEAD: 'head', GET:'getEntity', PUT:'saveEntity', DELETE:'delete', POST:'saveEntity']
+        "/ws/candidate/$uid/summary?(.$format)?" (controller:'candidate') {
+            action = [HEAD: 'head', GET:'getEntity']
             constraints {
                 summary = 'true'
             }
@@ -17,8 +17,8 @@ class DataRepositoryUrlMappings {
         "/ws/dataRepository/$uid?(.$format)?" (controller:'dataRepository') {
             action = [HEAD: 'head', GET:'getEntity', PUT:'saveEntity', DELETE:'delete', POST:'saveEntity']
         }
-        "/ws/dataRepository/summary" (controller:'dataRepository') {
-            action = [HEAD: 'head', GET:'getEntity', PUT:'saveEntity', DELETE:'delete', POST:'saveEntity']
+        "/ws/dataRepository/$uid/summary?(.$format)?" (controller:'dataRepository') {
+            action = [HEAD: 'head', GET:'getEntity']
             constraints {
                 summary = 'true'
             }

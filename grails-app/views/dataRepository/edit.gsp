@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="layout" content="${grailsApplication.config.ala.skin}"/>
-    <g:set var="entityName" value="${message(code: 'candidate.label', default: 'Candidate')}"/>
+    <g:set var="entityName" value="${message(code: 'dataRepository.label', default: 'Data Repository')}"/>
     <title><g:message code="default.edit.label" args="[entityName]"/></title>
 </head>
 
@@ -120,8 +120,9 @@
                     </td>
                     <td valign="top"
                         class="value ${hasErrors(bean: instance, field: 'connectionParameters', 'errors')}">
-                        <g:textField name="connectionParameters" maxLength="256"
+                        <g:textArea name="connectionParameters" cols="40" rows="5"
                                      value="${instance?.connectionParameters}"/>
+                        <cl:helpText code="dataResource.connectionParameters"/>
                     </td>
                 </tr>
 
@@ -132,7 +133,7 @@
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'scannerClass', 'errors')}">
                         <g:select name="scannerClass"
-                                  from="${Scanner.list()}"
+                                  from="${au.org.ala.collectory.datarepo.sources.Scanner.list()}"
                                   optionKey="scannerClass"
                                   optionValue="name"
                                   noSelection="${['null': 'Select a scanner']}"

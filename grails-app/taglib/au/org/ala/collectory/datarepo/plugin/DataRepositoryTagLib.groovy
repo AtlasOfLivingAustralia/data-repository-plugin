@@ -23,12 +23,12 @@ class DataRepositoryTagLib {
     }
 
     def jsonSummaryLink = { attrs, body ->
-        def uri = "${grailsApplication.config.grails.serverURL}/ws/candidate/summary/${attrs.uid}.json"        // have to use this method rather than 'link' so we can specify the accept format as json
+        def uri = "${grailsApplication.config.grails.serverURL}/ws/${attrs.entity}/${attrs.uid}/summary.json"        // have to use this method rather than 'link' so we can specify the accept format as json
         out << "<a class='json' href='${uri}'><img class='json' alt='summary' src='${resource(dir:"images", file:"json.png")}'/> View summary</a>"
     }
 
     def jsonDataLink = { attrs, body ->
-        def uri = "${grailsApplication.config.grails.serverURL}/ws/candidate/data/${attrs.uid}.json"
+        def uri = "${grailsApplication.config.grails.serverURL}/ws/${attrs.entity}/${attrs.uid}.json"
         // have to use this method rather than 'link' so we can specify the accept format as json
         out << "<a class='json' href='${uri}'><img class='json' alt='json' src='${resource(dir:"images", file:"json.png")}'/> View raw data</a>"
     }
@@ -40,5 +40,16 @@ class DataRepositoryTagLib {
     def editLink = {attrs, body ->
         out << link(class:"preview", controller:ProviderGroup.urlFormFromUid(attrs.uid), action:'show', id:attrs.uid) { body() }
     }
+
+    /**
+     * Converts a ProviderGroup groupType to a controller name
+     */
+    def controller = {attrs ->
+        switch (attrs.type) {
+            case CandidateDataResource.ENTITY_TYPE: out << 'candidate'; return
+            case DataRepository.ENTITY_TYPE: out << 'dataRepository'; return
+        }
+    }
+
 
 }
