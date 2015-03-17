@@ -55,6 +55,7 @@ class CandidateService {
     def idGeneratorService
     def issueManagementService
     def messageSource
+    def collectoryAuthService
 
     def stateMachine = StateMachine.make {
         state "New", {
@@ -164,7 +165,9 @@ class CandidateService {
         }
         start "New"
         error "Error"
-        event CANDIDATE_EVENT
+        event CANDIDATE_EVENT, {
+            external = false
+        }
         event ACCEPT_EVENT, {
             titleKey = "candidate.event.accept"
             title = "Accept"
@@ -183,7 +186,9 @@ class CandidateService {
             descriptionKey = "candidate.event.load.description"
             description = "This data resource has been loaded"
         }
-        event UPDATE_EVENT
+        event UPDATE_EVENT, {
+            external = false
+        }
         event REVIEWED_NOUPDATE_EVENT, {
             titleKey = "candidate.event.reviewedNoupdate"
             title = "No Update Required"
@@ -357,10 +362,17 @@ class CandidateService {
                     phone: cdr.phone,
                     notes: cdr.notes,
                     dataProvider: cdr.dataProvider,
-                    connectionParameters: cdr.connectionParameters
+                    connectionParameters: cdr.connectionParameters,
+                    userLastModified: collectoryAuthService?.username() ?: "Candidate Service"
+
             )
+            dr.validate()
+            if (dr.hasErrors()) {
+                dr.errors.every { err -> log.warn err }
+                throw new IllegalStateException("Unable to create data resource due to validation errors")
+            }
             dr.save()
-            cdr.dataResource = dr
+            cdr.dataResource = DataResource.findByUid(dr.uid)
             cdr.save()
             issueManagementService.comment(
                     cdr.issueId,

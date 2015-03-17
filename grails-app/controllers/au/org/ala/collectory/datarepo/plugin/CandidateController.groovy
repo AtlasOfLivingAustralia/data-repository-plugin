@@ -113,30 +113,31 @@ class CandidateController {
         redirect(action: "list")
     }
 
-    def accept = {
-        log.debug "Accept ${params.uid}"
+    def processEvents(events) {
+        log.debug "Process ${events} ${params.uid}"
         def instance = CandidateDataResource.findByUid(params.uid)
         if (!instance) {
             flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'candidate.label', default: 'Candidate'), params.uid])}"
             redirect(action: "list")
         } else {
-            instance = candidateService.event(candidateService.ACCEPT_EVENT, instance)
-            instance = candidateService.event(candidateService.CREATED_DATA_RESOURCE_EVENT, instance)
+            for (event in events)
+                instance = candidateService.event(event, instance)
             render(view: instance.hasErrors() ? 'edit' : 'show', model: [instance: instance, changes: getChanges(instance.uid),  events: candidateService.getEvents(instance)])
         }
+
     }
 
-    def clearError = {
-        log.debug "Clear error on ${params.uid}"
-        def instance = CandidateDataResource.findByUid(params.uid)
-        if (!instance) {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'candidate.label', default: 'Candidate'), params.uid])}"
-            redirect(action: "list")
-        } else {
-            instance = candidateService.event(candidateService.CLEAR_ERROR_EVENT, instance)
-            render(view: instance.hasErrors() ? 'edit' : 'show', model: [instance: instance, changes: getChanges(instance.uid),  events: candidateService.getEvents(instance)])
-        }
-    }
+    def accept = { processEvents([CandidateService.ACCEPT_EVENT, CandidateService.CREATED_DATA_RESOURCE_EVENT]) }
+
+    def reject = { processEvents([CandidateService.REJECT_EVENT]) }
+
+    def loaded = { processEvents([CandidateService.LOAD_EVENT]) }
+
+    def reviewedNoUpdate = { processEvents([CandidateService.REVIEWED_NOUPDATE_EVENT]) }
+
+    def reviewedUpdate = { processEvents([CandidateService.REVIEWED_UPDATE_EVENT]) }
+
+    def clearError = { processEvents([CandidateService.CLEAR_ERROR_EVENT]) }
 
     /**
      * Return headers as if GET had been called - but with no payload.

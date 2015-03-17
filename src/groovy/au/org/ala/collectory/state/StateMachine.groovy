@@ -264,6 +264,14 @@ class StateMachine {
         /** Any tags associated with this configuration */
         List<String> tags
 
+        StateMachineConfig(String name) {
+            this.name = name;
+            this.title = name;
+            this.titleKey = "noKey"
+            this.description = ""
+            this.descriptionKey = "noKey"
+        }
+
     }
 
     /** A specific state */
@@ -272,7 +280,7 @@ class StateMachine {
         Closure action
 
         def State(String name, Closure config) {
-            this.name = name
+            super(name)
             if (config != null) {
                 //config.resolveStrategy = Closure.DELEGATE_FIRST
                 config.delegate = this
@@ -289,7 +297,7 @@ class StateMachine {
         boolean external
 
         def Event(String name, Closure config) {
-            this.name = name
+            super(name)
             external = true
             if (config != null) {
                 //config.resolveStrategy = Closure.DELEGATE_FIRST
@@ -311,7 +319,7 @@ class StateMachine {
         Closure action
 
         def Transition(State origin, Event event, State destination, Closure action, Closure config) {
-            this.name = origin.name + " -> " + event.name + " -> " + destination.name
+            super(origin.name + " -> " + event.name + " -> " + destination.name)
             this.origin = origin
             this.event = event
             this.destination = destination
