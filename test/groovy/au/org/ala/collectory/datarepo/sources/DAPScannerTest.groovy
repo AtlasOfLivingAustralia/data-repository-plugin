@@ -21,7 +21,7 @@ class DAPScannerTest extends Specification {
     DataRepository repository
     DAPScanner scanner
 
-    def resolveAtom1 = { String path ->
+    def resolveAtom1 = { String path, type ->
         if (path.matches("http://ws\\.data\\.csiro\\.au/collections/\\d+"))
                 return this.loadResourceXml("dap-data-1.xml")
         else if (path.contains("&p=1&"))
@@ -29,8 +29,8 @@ class DAPScannerTest extends Specification {
         return this.loadResourceXml("dap-atom-2.xml")
     }
 
-    def resolveAtom2 = { String path ->
-        if (path.startsWith("http://ws.data.csiro.au/collections"))
+    def resolveAtom2 = { String path, type ->
+        if (path.matches("http://ws\\.data\\.csiro\\.au/collections/\\d+"))
             return this.loadResourceXml("dap-data-1.xml")
         return this.loadResourceXml("dap-atom-2.xml")
     }
@@ -60,6 +60,7 @@ class DAPScannerTest extends Specification {
             cdr.name == "Metallesthes specimens inspected and supporting information published in Metallesthes revision"
             cdr.pubDescription.startsWith("This data is a spreadsheet of label data of specimens from the flower beetle genus Metallesthes")
             cdr.techDescription == "Metallesthes; Scarabaeidae; Coleoptera; specimen data; statistical analysis; monthly occurrence"
+            cdr.websiteUrl == "https://data.csiro.au/dap/landingpage?pid=csiro%3A9067"
     }
 
     def testProcessPage1() {
@@ -89,7 +90,7 @@ class DAPScannerTest extends Specification {
             Date since = ISO8601Helper.parseTimestamp("2010-01-01T00:00:00")
             scanner.metaClass.getContent = resolveAtom2
             List<CandidateDataResource> cdrs = []
-        boolean found = scanner.processPage(1, cdrs, since)
+            boolean found = scanner.processPage(1, cdrs, since)
         then:
             found == false
             cdrs.size() == 0

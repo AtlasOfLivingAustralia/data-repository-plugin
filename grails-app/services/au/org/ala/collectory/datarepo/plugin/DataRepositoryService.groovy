@@ -92,6 +92,7 @@ class DataRepositoryService {
      * @return A list of modified candidates
      */
     List<CandidateDataResource> scan(DataRepository dr, Date since, String username) {
+        Timestamp now = new Timestamp(System.currentTimeMillis())
         Scanner scanner = dr.createScanner()
         def query = CandidateDataResource.where { dataProvider.uid == dr.dataProvider.uid }
         Map<String, CandidateDataResource> existing = query.list().collectEntries { [it.guid, it] }
@@ -102,11 +103,20 @@ class DataRepositoryService {
 
             log.debug "Candidiate ${cdr.guid} with existing ${prev?.uid}"
             if (prev) {
-                if (prev.lifecycle == "Loaded" && (!prev.lastModified || prev.lastModified.before(cdr.lastModified))) {
-                    log.debug "Loaded candidate ${prev.uid} has been modified"
+                // Have to do this to accommodate milliseconds being lost during timestamps
+                Calendar cm = Calendar.instance
+                Calendar pm = Calendar.instance
+                pm.timeInMillis = prev.lastModified?.time ?: 0L
+                cm.timeInMillis = cdr.lastModified?.time ?: now.time
+                pm.set(Calendar.MILLISECOND, 0)
+                cm.set(Calendar.MILLISECOND, 0)
+                if (pm.before(cm)) {
+                    log.debug "Loaded candidate ${prev.uid} has been modified ${pm} -> ${cm}"
                     prev.lastModified = cdr.lastModified
                     prev.userLastModified = username
-                    candidateService.event(prev, CandidateService.UPDATE_EVENT)
+                    prev.save()
+                    if (prev.lifecycle == "Loaded")
+                        candidateService.event(prev, CandidateService.UPDATE_EVENT)
                     candidates << prev
                 }
             } else {
@@ -116,6 +126,8 @@ class DataRepositoryService {
                 candidates << cdr
             }
         }
+        dr.lastChecked = now
+        dr.save(flush: true)
         return candidates
     }
 }

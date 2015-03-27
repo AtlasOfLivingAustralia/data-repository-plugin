@@ -25,6 +25,25 @@ if (!issueManagement.api)
 if (!issueManagement.pub)
     issueManagement.pub = "https://github.com"
 
+///******* standard grails **********/
+grails.project.groupId = 'au.org.ala' // change this to alter the default package name and Maven publishing destination
+grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format
+grails.mime.use.accept.header = true
+grails.mime.types = [ html: ['text/html','application/xhtml+xml'],
+                      xml: ['text/xml', 'application/xml'],
+                      text: 'text/plain',
+                      js: 'text/javascript',
+                      rss: 'application/rss+xml',
+                      atom: 'application/atom+xml',
+                      css: 'text/css',
+                      csv: 'text/csv',
+                      tsv: 'text/tsv',
+                      all: '*/*',
+                      json: ['application/json','text/json'],
+                      form: 'application/x-www-form-urlencoded',
+                      multipartForm: 'multipart/form-data'
+]
+
 log4j = {
     // Example of changing the log pattern for the default console
     // appender:

@@ -1,1 +1,12 @@
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:fh="http://purl.org/syndication/history/1.0"><title type="text">CSIRO Data Access Portal - Search Results</title><subtitle type="html">Query Parameters: rpp 100; q specimen; p 18; sb RECENT; soud true</subtitle><updated>2015-03-24T00:54:43.393Z</updated><link href="https://data.csiro.au/dap/" rel="alternate" hreflang="en" type="text/html"/><link href="http://ws.data.csiro.au/collections?rpp=100&amp;p=18&amp;soud=true&amp;sb=RECENT&amp;q=specimen" rel="self" type="application/atom+xml"/><fh:complete/><rights type="text">Copyright (c) 2015, CSIRO Australia</rights><id>http://ws.data.csiro.au/collections</id><generator uri="h ttp://www.csiro.au" version="1.0">CSIRO Data Access Portal</generator></feed>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:fh="http://purl.org/syndication/history/1.0">
+    <title type="text">CSIRO Data Access Portal - Search Results</title>
+    <subtitle type="html">Query Parameters: rpp 100; q specimen; p 18; sb RECENT; soud true</subtitle>
+    <updated>2015-03-24T00:54:43.393Z</updated>
+    <link href="https://data.csiro.au/dap/" rel="alternate" hreflang="en" type="text/html"/>
+    <link href="http://ws.data.csiro.au/collections?rpp=100&amp;p=18&amp;soud=true&amp;sb=RECENT&amp;q=specimen"
+          rel="self" type="application/atom+xml"/>
+    <fh:complete/>
+    <rights type="text">Copyright (c) 2015, CSIRO Australia</rights>
+    <id>http://ws.data.csiro.au/collections</id>
+    <generator uri="h ttp://www.csiro.au" version="1.0">CSIRO Data Access Portal</generator>
+</feed>

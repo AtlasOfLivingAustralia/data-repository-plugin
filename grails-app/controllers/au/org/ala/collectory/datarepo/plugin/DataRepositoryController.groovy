@@ -184,7 +184,7 @@ class DataRepositoryController {
             return wsError("Scan requires admin role")
         if (!params.uid)
             return wsError("Requires repository uid")
-        log.debug "Scan with uid ${params.uid}"
+        log.debug "Scan with uid ${params.uid} format ${params.format}"
         def instance = DataRepository.findByUid(params.uid)
         if (!instance)
             return wsError("Invalid uid ${params.uid}")
@@ -194,7 +194,7 @@ class DataRepositoryController {
         withFormat {
             text { render (contentType: 'text/plain', text: updates.findAll({ dr -> dr.uid != null }).collect({ dr -> dr.uid }).join("\n")) }
             xml { render updates as XML }
-            json { render updates as JSON }
+            '*' { render updates as JSON }
         }
     }
 

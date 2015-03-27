@@ -153,7 +153,7 @@ class DAPScanner extends Scanner {
         candidate.name = truncate(data.title?.text().trim(), 1024)
         candidate.pubDescription = data.description?.text().trim()
         candidate.techDescription = data.keywords?.text().trim()
-        candidate.websiteUrl = entry.link.find { l -> l.@rel == MimeType.HTML.name }
+        candidate.websiteUrl = data.landingPage?.@href?.text().trim() ?: data.self?.text().trim()
         candidate.userLastModified = repository.name
         return candidate
     }
