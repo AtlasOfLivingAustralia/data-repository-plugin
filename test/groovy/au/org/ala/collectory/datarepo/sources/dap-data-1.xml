@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<dap:dataCollection xmlns:dap="urn:au:csiro:rds:dap:1.0">
+    <dap:id>csiro:9067</dap:id>
+    <dap:self>http://ws.data.csiro.au/collections/10390</dap:self>
+    <dap:landingPage rel="alternate" type="text/html" href="https://data.csiro.au/dap/landingpage?pid=csiro%3A9067"/>
+    <dap:title>Metallesthes specimens inspected and supporting information published in Metallesthes revision
+    </dap:title>
+    <dap:published>2014-09-10T08:34:47.466+10:00</dap:published>
+    <dap:leadResearcher>Chris Moeseneder</dap:leadResearcher>
+    <dap:description>This data is a spreadsheet of label data of specimens from the flower beetle genus Metallesthes
+        (including the species anneliesae sp. nov., metallescens and unicolor) which were inspected in collections. The
+        spreadsheet was also used to create graphics that show seasonal occurrences of each species and statistics on
+        the occurrence of the two sexes of each species in search of evidence for early male emergence. The paper which
+        uses this data (and a link to the data is provided, including DOI) is &quot;Revision of the genus Metallesthes
+        Kraatz and description of Metallesthes anneliesae, a new species of Cetoniinae (Coleoptera: Scarabaeidae) from
+        Queensland and New South Wales, Australia&quot;. Authors are Moeseneder, Hutchinson and Lambkin. In the paper
+        the endemic Australian flower chafer genus Metallesthes Kraatz, 1880 is revised. Metallesthes anneliesae
+        Moeseneder &amp; Hutchinson sp. nov. is described from southern Queensland and New South Wales. Metallesthes
+        unicolor (Macleay, 1863) stat. rev. is raised from synonymy with Metallesthes metallescens (White, 1859).
+        Metallesthes metallescens and Metallesthes unicolor are redescribed and their holotypes are figured. A specimen
+        bearing a Nonfried type label is designated as the Lectotype of Metallesthes subpilosa Nonfried 1891.
+        Metallesthes subpilosa syn. nov. is synonymised with Pseudoclithria ruficornis (Westwood, 1874). A key to the
+        species of the genus is provided. Distribution maps are shown and known host plants are listed.
+    </dap:description>
+    <dap:fieldsOfResearch>
+        <dap:fieldOfResearch>060301</dap:fieldOfResearch>
+    </dap:fieldsOfResearch>
+    <dap:dataStartDate>1886-01-01T00:00:00+10:00</dap:dataStartDate>
+    <dap:dataEndDate>2014-05-14T00:00:00+10:00</dap:dataEndDate>
+    <dap:keywords>Metallesthes; Scarabaeidae; Coleoptera; specimen data; statistical analysis; monthly occurrence
+    </dap:keywords>
+    <dap:relatedMaterials/>
+    <dap:licence>Creative Commons Attribution Licence</dap:licence>
+    <dap:link rel="license" type="text/html" href="http://ws.data.csiro.au/licences/2"/>
+    <dap:organisations>
+        <dap:organisation>CSIRO Australia</dap:organisation>
+        <dap:organisation>Department of Agriculture and Food Western Australia</dap:organisation>
+        <dap:organisation>Queensland Museum</dap:organisation>
+    </dap:organisations>
+    <dap:attributionStatement>Chris Moeseneder; Hutchinson Paul; Christine Lambkin (2014): Metallesthes specimens
+        inspected and supporting information published in Metallesthes revision. v2. CSIRO. Data Collection.
+        10.4225/08/540F8063E8156
+    </dap:attributionStatement>
+    <dap:rights>All Rights (including copyright) CSIRO Australia 2014.</dap:rights>
+    <dap:access>The metadata and data are available to the public.</dap:access>
+    <dap:size>small</dap:size>
+    <dap:metadata>http://ws.data.csiro.au/collections/10390/metadata</dap:metadata>
+    <dap:data>http://ws.data.csiro.au/collections/10390/data</dap:data>
+    <dap:supportingFiles>http://ws.data.csiro.au/collections/10390/support</dap:supportingFiles>
+</dap:dataCollection>

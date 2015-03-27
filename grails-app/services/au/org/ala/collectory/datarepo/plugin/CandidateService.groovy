@@ -290,6 +290,26 @@ class CandidateService {
     }
 
     /**
+     * Insert a new, already constructed data resource.
+     *
+     * @param cdr The datra resource
+     *
+     * @return The new, saved resource
+     */
+    def insertNew(CandidateDataResource cdr) {
+        cdr.uid = idGeneratorService.getNextTempDataResource().replace(IdGeneratorService.IdType.tempDataResource.prefix, CandidateDataResource.ENTITY_PREFIX)
+        cdr.lifecycle = stateMachine.start.name
+        log.debug "Insert new ${cdr.uid}"
+        cdr.validate()
+        if (!cdr.hasErrors())
+            cdr.save(flush: true)
+        else {
+            cdr.errors.every { err -> log.debug err }
+        }
+        return cdr
+    }
+
+    /**
      * Insert a new candidate data resource
      *
      * @param obj The object that carries the data resource data

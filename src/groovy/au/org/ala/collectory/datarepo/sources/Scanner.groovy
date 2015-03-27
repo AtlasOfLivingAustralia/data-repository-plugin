@@ -22,6 +22,25 @@ abstract class Scanner {
     def DataRepository repository
 
     /**
+     * Truncate a large string to fit it into a field.
+     * <p>
+     * Truncated strings have an ellipsis at the end
+     *
+     * @param string The string
+     * @param len The expected length
+     *
+     * @return The possible truncated string
+     */
+    def truncate(String string, int len) {
+        if (!string || string.length() <= len)
+            return string
+        int idx = string.lastIndexOf((char) ' ', len - 3)
+        if (idx < 0)
+            idx = len - 3
+        return string.substring(0, idx) + "..."
+    }
+
+    /**
      * Construct for a repository.
      * <p>
      * The data repository contains enough information to make a connection to the
@@ -64,7 +83,8 @@ abstract class Scanner {
      */
     static List<Class<Scanner>> list() {
         [
-                [scannerClass: NullScanner.class, name: "${NullScanner.NAME} - ${NullScanner.DESCRIPTION}"]
+                [scannerClass: NullScanner.class, name: "${NullScanner.NAME} - ${NullScanner.DESCRIPTION}"],
+                [scannerClass: DAPScanner.class, name: "${DAPScanner.NAME} - ${DAPScanner.DESCRIPTION}"]
         ]
     }
 

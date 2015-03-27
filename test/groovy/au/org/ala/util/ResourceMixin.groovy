@@ -37,6 +37,12 @@ class ResourceMixin {
         return loadResource(this.getClass(), name)
     }
 
+    def loadResourceXml(String name) {
+        def slurper = new XmlSlurper()
+
+        return slurper.parse(this.getClass().getResourceAsStream(name))
+    }
+
     def assertEqualsIgnoreWhitespace(String expected, String actual) {
         def expected1 = expected.replaceAll("\\s", "")
         def actual1 = actual.replaceAll("\\s", "")

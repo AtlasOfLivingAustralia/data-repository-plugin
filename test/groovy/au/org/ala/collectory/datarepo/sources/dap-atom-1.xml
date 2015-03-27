@@ -1,0 +1,891 @@
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:fh="http://purl.org/syndication/history/1.0">
+    <title type="text">CSIRO Data Access Portal - Search Results</title>
+    <subtitle type="html">Query Parameters: rpp 100; q specimen; p 1; sb RECENT; soud true</subtitle>
+    <updated>2015-03-19T22:55:33.587Z</updated>
+    <link href="https://data.csiro.au/dap/" rel="alternate" hreflang="en" type="text/html"/>
+    <link href="http://ws.data.csiro.au/collections?q=specimen&amp;soud=true&amp;rpp=100&amp;p=1&amp;sb=RECENT"
+          rel="self" type="application/atom+xml"/>
+    <fh:complete/>
+    <rights type="text">Copyright (c) 2015, CSIRO Australia</rights>
+    <id>http://ws.data.csiro.au/collections</id>
+    <generator uri="http://www.csiro.au" version="1.0">CSIRO Data Access Portal</generator>
+    <entry>
+        <title type="text">Metallesthes specimens inspected and supporting information published in Metallesthes
+            revision
+        </title>
+        <link href="http://ws.data.csiro.au/collections/10390" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A9067" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:9067</id>
+        <published>2014-09-09T22:34:47.000Z</published>
+        <author>
+            <name>Chris Moeseneder</name>
+        </author>
+        <summary type="text">This data is a spreadsheet of label data of specimens from the flower beetle genus
+            Metallesthes (including the species anneliesae sp. nov., metallescens and unicolor) which were inspected in
+            collections. The spreadsheet was also used to create graphics that show seasonal occurrences of each species
+            and statistics on the occurrence of the two sexes of each species in search of evidence for early male
+            emergence. The paper which uses this data (and a link to the data is provided, including DOI) is "Revision
+            of the genus Metallesthes Kraatz and description of Metallesthes anneliesae, a new species of Cetoniinae
+            (Coleoptera: Scarabaeidae) from Queensland and New South Wales, Australia". Authors are Moeseneder,
+            Hutchinson and Lambkin. In the paper the endemic Australian flower chafer genus Metallesthes Kraatz, 1880 is
+            revised. Metallesthes anneliesae Moeseneder &amp; Hutchinson sp. nov. is described from southern Queensland
+            and New South Wales. Metallesthes unicolor (Macleay, 1863) stat. rev. is raised from synonymy with
+            Metallesthes metallescens (White, 1859). Metallesthes metallescens and Metallesthes unicolor are redescribed
+            and their holotypes are figured. A specimen bearing a Nonfried type label is designated as the Lectotype of
+            Metallesthes subpilosa Nonfried 1891. Metallesthes subpilosa syn. nov. is synonymised with Pseudoclithria
+            ruficornis (Westwood, 1874). A key to the species of the genus is provided. Distribution maps are shown and
+            known host plants are listed.
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">CSIRO Permanent Rainforest Plots of North Queensland</title>
+        <link href="http://ws.data.csiro.au/collections/9749" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A6638" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:6638</id>
+        <published>2014-07-15T06:37:57.000Z</published>
+        <author>
+            <name>Matt Bradford</name>
+        </author>
+        <summary type="text">We present repeated stem measurement data from 20, 0.5 ha (100 m x 50 m) permanent
+            rainforest plots in northern Queensland, Australia from 1971 to 2013. The plots have a rainfall range of
+            1200 to 3500 mm, represent eleven vegetation types, six parent materials, and range from 15 m to 1200 m
+            above sea level. Except for minor disturbances associated with selective logging on two plots, the plots
+            were established in old growth forest and all plots have thereafter been protected. Plots were regularly
+            censused and at each census the diameter at breast height (DBH) of all stems â‰¥10 cm DBH were recorded.
+            Data is presented for 10998 individual stems with plot stem densities at establishment ranging from 476 to
+            1104 stems ha-1. Due to the wide geographical range of the plots, no species dominate, although the families
+            Lauraceae, Rutaceae and Myrtaceae contribute a large number of species. Basal area values at establishment
+            ranged from 28.6 to 63.3 m2 ha-1 and showed no trend of increasing or decreasing over time due mainly to
+            regular disturbance and recovery from natural events such as cyclones. In addition to stems â‰¥10 cm DBH
+            data, we present height data, floristic data from understory stems (â‰¥50 cm height to &lt;10 cm DBH), an
+            auxiliary species list (including vines, epiphytes, ferns, grasses, herbs and other life forms), and a list
+            of voucher specimens lodged in herbaria. The data collected from the 20 plots provides an insight into the
+            floristics, structure and long term forest dynamics of Australian tropical rainforests and allows direct
+            comparisons to be made with long-term monitoring plots at a global scale.
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Sand Wasp</title>
+        <link href="http://ws.data.csiro.au/collections/8315" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8289" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8289</id>
+        <published>2014-03-12T02:46:51.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Sand Wasp [Bembix sp.] generated from an optical scanning rig. The
+            Sand Wasp model was reconstructed from 144 images of 18MP each. Number of vertices is 84,155; and number of
+            faces is 168,308. The dimension of the 3D model is in mm and the physical length of the original specimen is
+            approximately 17mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Jewel Beetle</title>
+        <link href="http://ws.data.csiro.au/collections/8314" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8308" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8308</id>
+        <published>2014-03-12T02:46:29.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Jewel Beetle [Temognatha chevrolatii] generated from an optical
+            scanning rig. The Jewel Beetle model was reconstructed from 36 images of 21MP. Number of vertices is 39,603;
+            and number of faces is 79,228. The dimension of the 3D model is in mm and the physical length of the
+            original specimen is approximately 44mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing same the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Longhorn Beetle</title>
+        <link href="http://ws.data.csiro.au/collections/7553" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A7527" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:7527</id>
+        <published>2014-03-11T00:22:34.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Longhorn Beetle [Aridaeus thoracicus] generated from an optical
+            scanning rig. The Longhorn Beetle model was reconstructed from 144 images of 18MP each. Number of vertices
+            is 80,002; and number of faces is 160,000. The dimension of the 3D model is in mm and the physical length of
+            the original specimen is approximately 20mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing same the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2013. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Granary Weevil</title>
+        <link href="http://ws.data.csiro.au/collections/8309" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8309" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8309</id>
+        <published>2014-03-11T00:21:44.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Granary Weevil [Sitophilus granarius] generated from an optical
+            scanning rig. The Granary Weevil model was reconstructed from 4464 images of 18MP, each taken from 144
+            views, each view with 31 multi-focus images. Number of vertices is 129,533; and number of faces is 259,068.
+            The dimension of the 3D model is in mm and the physical length of the original specimen is approximately
+            3.7mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing same the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Christmas Beetle</title>
+        <link href="http://ws.data.csiro.au/collections/8290" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8290" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8290</id>
+        <published>2014-03-11T00:21:18.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Christmas Beetle [Anoplognathus viridiaeneus] generated from an
+            optical scanning rig. The Christmas Beetle model was reconstructed from 144 images of 18MP each. Number of
+            vertices is 126,620; and number of faces is 253236. The dimension of the 3D model is in mm and the physical
+            length of the original specimen is approximately 26mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Black Palm Weevil</title>
+        <link href="http://ws.data.csiro.au/collections/8310" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8310" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8310</id>
+        <published>2014-03-11T00:20:53.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Black Palm Weevil [Rhynchophorus vulneratus] generated from an
+            optical scanning rig. The Black Palm Weevil model was reconstructed from 33 images of 21MP. Number of
+            vertices is 42,912; and number of faces is 85,824. The dimension of the 3D model is in mm and the physical
+            length of the original specimen is approximately 35mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing same the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Black Field Cricket</title>
+        <link href="http://ws.data.csiro.au/collections/8291" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8291" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8291</id>
+        <published>2014-03-11T00:20:31.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Black Field Cricket [Teleogryllus oceanicus] generated from an
+            optical scanning rig. The Black Field Cricket model was reconstructed from 144 images of 18MP each. Number
+            of vertices is 126,620; and number of faces is 253,236. The dimension of the 3D model is in mm and the
+            physical length of the original specimen is approximately 33mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing the same model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">3D Reconstruction from multi-view images of a Amycterine Ground Weevil</title>
+        <link href="http://ws.data.csiro.au/collections/8307" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A8307" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/2" rel="license" type="text/html"/>
+        <id>csiro:8307</id>
+        <published>2014-03-11T00:20:08.000Z</published>
+        <author>
+            <name>Chuong Nguyen</name>
+        </author>
+        <summary type="text">A 3D reconstruction of a Amycterine Ground Weevil [Gagatophorus draco] generated from an
+            optical scanning rig. The Amycterine Ground Weevil model was reconstructed from 144 images of 18MP each.
+            Number of vertices is 91,820; and number of faces is 183,648. The dimension of the 3D model is in mm and the
+            physical length of the original specimen is approximately 33mm. This collection contains 4 files:
+            * A PNG thumbnail of the model
+            * An X3D file containing the model
+            * A PLY file containing same the model
+            * A JPG texture for the model
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2014. This collection is licensed under a
+            Creative Commons Attribution Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Morphological characters of 272 specimens of Craspedia and Pycnosorus</title>
+        <link href="http://ws.data.csiro.au/collections/7491" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A6242" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:6242</id>
+        <published>2013-09-19T13:12:49.000Z</published>
+        <author>
+            <name>Alexander Schmidt-Lebuhn</name>
+        </author>
+        <summary type="text">Two tab separated value files of morphological characters of 272 specimens of Australian
+            Craspedia and Pycnosorus (Asteraceae, Asteroideae, Gnaphalieae) for a homogeneity and reclassification
+            analysis as part of a CSIRO Plant Industry Summer Student project. The results of the project will be
+            published as a scientific paper. One table contains the raw data as first measured by the summer student and
+            the project leader, the second the derived data as used for analysis.
+        </summary>
+        <rights type="text">All Rights (including copyright) CSIRO Australia 2013. This collection is licensed under a
+            CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian National Wildlife Collection</title>
+        <link href="http://ws.data.csiro.au/collections/6144" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4643" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4643</id>
+        <published>2013-01-30T04:49:54.000Z</published>
+        <author>
+            <name>Leo Joseph</name>
+        </author>
+        <summary type="text">The Australian National Wildlife Collection is a significant biodiversity resource aiding
+            the study, classification and documentation of Australiaâ€™s terrestrial vertebrates (excluding fresh water
+            fish) . In April 1976, it was formally recognised by its gazettal as the Australian National Wildlife
+            Collection by the Commonwealth Government. &#xd;
+            &#xd;
+            The Australian National Wildlife Collection holds approximately 200 000 irreplaceable scientific specimens,
+            including skins, skeletons, specimens in spirit, bird eggs, tissues and a wildlife sound library. The
+            collection focuses on terrestrial vertebrates of Australia and Papua New Guinea and rodents of South-East
+            Asia. There are also specimens from other parts of the world.&#xd;
+            &#xd;
+            ANWC research addresses the diversity, evolution, and conservation of Australia's wildlife, focussing on its
+            systematics and taxonomy (study of evolutionary relationships among organisms) and biogeography.
+        </summary>
+        <rights type="text">CSIRO hosts this collection. Access rights: Access to specimens for research purposes.
+            Specimens may be lent to other research facilities such as museums and universities by application to the
+            Director. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian National Insect Collection</title>
+        <link href="http://ws.data.csiro.au/collections/6143" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4641" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4641</id>
+        <published>2013-01-30T04:49:24.000Z</published>
+        <author>
+            <name>Beth Mantle</name>
+        </author>
+        <summary type="text">The Australian National Insect Collection (ANIC) is the world's largest collection of
+            Australian insects and related groups such as mites, spiders, earthworms, nematodes and centipedes.&#xd;
+            &#xd;
+            There are over 12 million specimens housed in the Collection which is maintained by CSIRO in Canberra, in
+            the Australian Capital Territory. ANIC is an important research collection used by CSIRO researchers,
+            university staff and students, and scientists from Australian and international research organisations.
+        </summary>
+        <rights type="text">CSIRO hosts this collection. Access rights: Access to specimens for research purposes by
+            appointment only. Specimens may be lent to other research facilities such as museums and universities by
+            application to the Collection Manager. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Wildlife Parasite and Pathology Collection</title>
+        <link href="http://ws.data.csiro.au/collections/6124" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4657" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4657</id>
+        <published>2013-01-24T03:48:45.000Z</published>
+        <author>
+            <name>Leo Joseph</name>
+        </author>
+        <summary type="text">The Wildlife Parasite and Pathology Collection is a biodiversity resource backing up nearly
+            40 years of research into the biology and taxonomy of Australian native and introduced parasites and the
+            biology and pathology of their hosts.&#xd;
+            &#xd;
+            The Collection currently holds 9,228 irreplaceable specimens of 1074 parasite species, covering 94 families
+            in 13 orders, from 7,358 individual postmortems on 579 host species. The collection documents 24,110
+            individual host-parasite associations, representing 3,307 unique associations between a given parasite
+            species and a given host species.&#xd;
+            &#xd;
+            The Collection focuses on the parasites of the terrestrial vertebrates of Australia and Papua New Guinea and
+            rodents of South-East Asia. There are also specimens from other parts of the world.
+        </summary>
+        <rights type="text">This collection is owned by CSIRO. Access rights: Specimens may be lent to other research
+            facilities such as museums and universities by application to the Director. This collection is licensed
+            under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian National Insect Collection - Euryglossinae Bee (Part 1)</title>
+        <link href="http://ws.data.csiro.au/collections/5861" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A5861" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1021" rel="license" type="text/html"/>
+        <id>csiro:5861</id>
+        <published>2012-11-19T05:12:13.000Z</published>
+        <author>
+            <name>Nicole Fisher</name>
+        </author>
+        <summary type="text">Australia has over 1,500 species of native bees in Australia. Photos used in the Atlas of
+            Living Australia's Volunteer Portal adds to our knowledge about the distribution and diversity of
+            Australia's Euryglossinae bees. Helping us unlock information that has been hidden away at the Australian
+            National Insect Collection, but now will be available worldwide through the Atlas of Living Australia.
+        </summary>
+        <rights type="text">All Rights Reserved (including copyright) CSIRO Australia 2012. This collection is licensed
+            under a Creative Commons Attribution-ShareAlike Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">International Sheep Genomics Consortium DNA Repository</title>
+        <link href="http://ws.data.csiro.au/collections/4661" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4661" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4661</id>
+        <published>2012-11-19T04:51:44.000Z</published>
+        <author>
+            <name>James Kijas</name>
+        </author>
+        <summary type="text">DNA samples from sheep from all over the world representing 3,500 samples from 90 breeds.
+            This collection is held on behalf of the International Sheep Genomics Consortium (ISCG).
+        </summary>
+        <rights type="text">The International Sheep Genomics Consortium (ISCG) owns this collection. Access rights:
+            Access to samples is available for CSIRO and others undertaking appropriate public research (generally for
+            non-commercial use).
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian Tropical Herbarium</title>
+        <link href="http://ws.data.csiro.au/collections/4647" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4647" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4647</id>
+        <published>2012-11-12T01:09:51.000Z</published>
+        <author>
+            <name>Frank Zich</name>
+        </author>
+        <summary type="text">The Australian Tropical Herbarium is located in Cairns and brings together herbarium
+            specimens from the Australian National Herbarium previously housed in Atherton, Queensland Herbarium
+            specimens previously housed in Mareeba and the James Cook University Herbarium collection from Townsville.
+            &#xd;
+            &#xd;
+            The Australian Tropical Herbarium is a joint venture between James Cook University (JCU), the Commonwealth
+            Scientific and Industrial Research Organisation (CSIRO), the Director of National Parks (DNP), the
+            Queensland Department of State Development, Trade and Innovation and Queensland's Environmental Protection
+            Agency (EPA).&#xd;
+            &#xd;
+            It is located in the Australian Tropical Forest Institute building at James Cook University's Cairns campus,
+            hosting a research team to manage a scientific herbarium collection, undertake taxonomic and systematic
+            research and provide botanical information from the collection to partners, stakeholders and clients, as
+            well as to visiting international researchers.&#xd;
+            &#xd;
+            The Australian Tropical Herbarium's collection comprises more than 160,000 plant specimens.
+        </summary>
+        <rights type="text">This collection is a joint venture between: CSIRO, James Cook University and the Queensland
+            Dept of Environment &amp; Heritage. Access rights: Visitors wishing to use the Herbarium Collection, rather
+            than the Public Reference Collections, should make prior arrangements with the Curator. Specimens are
+            generally available on loan for scientific research in the public interest through activities and procedures
+            that will not endanger the safety and integrity of the specimens as archival objects. The safety and
+            security of the specimens is of prime importance. For more access conditions please see the ATH website.
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian National Herbarium</title>
+        <link href="http://ws.data.csiro.au/collections/4642" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4642" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4642</id>
+        <published>2012-11-12T01:09:31.000Z</published>
+        <author>
+            <name>Brendan Lepschi</name>
+        </author>
+        <summary type="text">The Australian National Herbarium, with approximately 1 million preserved plant specimens,
+            is one of the three largest plant collections in Australia. It is unique among the Australian Herbaria in
+            having a national focus for its collections, acquisition and research programs.&#xd;
+            &#xd;
+            The Australian National Herbarium arose from the amalgamation over the years of several herbaria managed by
+            the Commonwealth Government. These included several CSIRO herbaria, the Forest Research Institute Eucalypt
+            Collection, the Forest Research Institute's Atherton Rainforest Collection, and the Australian National
+            Botanic Gardens Herbarium. The CSIRO's core collection, previously known as 'Herbarium Australiense', was
+            renamed 'Australian National Herbarium' in 1984.&#xd;
+            &#xd;
+            The Australian National Herbarium is a program of the Centre for Australian National Biodiversity Research
+            and a contributor to Australia's Virtual Herbarium.
+        </summary>
+        <rights type="text">Specimens in the Australian National Herbarium are jointly owned by partners in the Centre
+            for Australian National Biodiversity Research. Access rights: Australian National Herbarium is accessible to
+            researchers only. Loans available only to registered Herbaria. A public reference herbarium is accessible at
+            the Australian National Botanic Gardens, Canberra.
+
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Specimens of Ichneumonidae (wasps) Trapped in the Lockyer Valley (2007-2008)</title>
+        <link href="http://ws.data.csiro.au/collections/4656" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4656" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4656</id>
+        <published>2012-11-12T01:09:21.000Z</published>
+        <author>
+            <name>Anna Marcora</name>
+        </author>
+        <summary type="text">The teams work focuses on understanding and capturing the ecosystem services of pest
+            control and pollination for sustainable, secure food production. A key component of this work is knowing the
+            function of a wide range of invertebrates that provide these services, of which Hymenoptera figure
+            prominently. This particular project involved the use of 12 bi-directional malaise traps set up for a year
+            (2007-08) in various habitats and differing landscapes (native vegetation and agricultural areas in the
+            Lockyer Valley). This long term malaise trapping resulted in a vast number of Hymenoptera samples being
+            generated and this collection contains the Ichneumonidae caught in these malaise traps during that time.
+            This collection consists of 11,780 specimens in ethanol covering 225 species and of these, approximately
+            2000 have been pinned, thereby creating a reference collection.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access may be provided to bona fide researchers
+            by negotiation. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Pinned Specimens of Native Bees Trapped in the Lockyer Valley (2007-2008)</title>
+        <link href="http://ws.data.csiro.au/collections/4655" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4655" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4655</id>
+        <published>2012-11-12T01:09:11.000Z</published>
+        <author>
+            <name>Anna Marcora</name>
+        </author>
+        <summary type="text">Our teams work focuses on understanding and capturing the ecosystem services of pest
+            control and pollination for sustainable, secure food production. A key component of this work is knowing the
+            function of a wide range of invertebrates that provide these services, of which Hymenoptera figure
+            prominently. This particular project involved the use of 12 bi-directional malaise traps set up for a year
+            (2007-08) in various habitats and differing landscapes (native vegetation and agricultural areas in the
+            Lockyer Valley). This long term malaise trapping resulted in a vast number of Hymenoptera samples being
+            generated and this collection contains the native bees caught in these malaise traps during that time. This
+            collection consists of 1,173 pinned specimens covering 70 species of native bees.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access may be provided to bona fide researchers
+            by negotiation.
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Pinned Specimens of Apis mellifera (honey bees) Trapped in the Lockyer Valley (2007-2008)
+        </title>
+        <link href="http://ws.data.csiro.au/collections/4654" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4654" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4654</id>
+        <published>2012-11-12T01:09:00.000Z</published>
+        <author>
+            <name>Anna Marcora</name>
+        </author>
+        <summary type="text">The team's work focuses on understanding and capturing the ecosystem services of pest
+            control and pollination for sustainable, secure food production. A key component of this work is knowing the
+            function of a wide range of invertebrates that provide these services, of which Hymenoptera figure
+            prominently. This particular project involved the use of 12 bi-directional malaise traps set up for a year
+            (2007-08) in various habitats and differing landscapes (native vegetation and agricultural areas in the
+            Lockyer Valley). This long term malaise trapping resulted in a vast number of Hymenoptera samples being
+            generated and this collection contains the Apis mellifera caught in these malaise traps during that time (a
+            total of 98 pinned specimens).
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access may be provided to bona fide researchers
+            by negotiation.
+
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Herbarium of Native Vegetation Surrounding Malaise Traps Used to Collect Hymenoptera in
+            Lockyer Valley (2007-2008)
+        </title>
+        <link href="http://ws.data.csiro.au/collections/4653" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4653" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4653</id>
+        <published>2012-11-12T01:08:50.000Z</published>
+        <author>
+            <name>Anna Marcora</name>
+        </author>
+        <summary type="text">Our teams work focuses on understanding and capturing the ecosystem services of pest
+            control and pollination for sustainable, secure food production. A key component of this work is knowing the
+            function of a wide range of invertebrates that provide these services and understanding how these insects
+            move around in differing landscapes. Most of our research projects revolve around the role of native
+            vegetation in agricultural production systems. It is thought that by having an integrated approach to
+            agricultural production and landscape management it will help to create a more pest suppressive landscape.
+            Studies have shown that native vegetation provides a reservoir of natural enemies by providing them with
+            prey and nectar. Therefore these natural enemies have the potential to colonise a crop quicker thereby
+            suppressing pest populations. This particular project involved the use of 12 bi-directional malaise traps
+            set up for a year (2007-08) in various habitats and differing landscapes (native vegetation and agricultural
+            areas in the Lockyer Valley). This Herbarium collection consists of approximately 50 (dried &amp; pressed)
+            native plant specimens collected from around these malaise traps.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access may be provided to bona fide researchers
+            by negotiation.
+
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Wood-Inhabiting Fungi Collection</title>
+        <link href="http://ws.data.csiro.au/collections/4665" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4665" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4665</id>
+        <published>2012-11-12T01:08:24.000Z</published>
+        <author>
+            <name>Geoff Dumsday</name>
+        </author>
+        <summary type="text">An extensive collection, maintained since 1930 that contains over 2000 living and
+            uncharacterized strains of fungi isolated from fallen wood at various sites across Australia. Each isolate
+            is stored as a "dormant" culture on a malt extract slope that is overlayed with paraffin oil.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access may be provided to bona fide researchers
+            by negotiation. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Tropically Adapted Cattle Semen Collection (1979-2011)</title>
+        <link href="http://ws.data.csiro.au/collections/4664" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4664" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4664</id>
+        <published>2012-11-12T01:08:13.000Z</published>
+        <author>
+            <name>Ed Charmley</name>
+        </author>
+        <summary type="text">Collection contains semen from bulls from the Boran-Tuli Importation Program in 1991 and
+            part of the Belmont Beef Breeding Program from the late 1970s through to 2011. The collection comprises
+            several thousand straws associated with the development of tropically adapted Bos taurus and Bos indicus
+            cattle.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Research and commercial access available by
+            request. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Livestock Tissue Samples Analysed for Gene Expression Profiles Related to Production</title>
+        <link href="http://ws.data.csiro.au/collections/4662" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4662" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4662</id>
+        <published>2012-11-12T01:08:01.000Z</published>
+        <author>
+            <name>Nick Hudson</name>
+        </author>
+        <summary type="text">Samples from a range of tissues, including muscle, liver, adipose tissue and blood taken
+            from Australian livestock for research purposes. Samples have been taken from a number of species, including
+            cattle, sheep and pigs. The animals have been part of experiments involving a range of different treatments
+            and/or genetic selection criteria, including, intramuscular fat, tenderness, different diets, exposure to
+            different growth promotants and different genetic compositions. Many of the samples have been analysed for
+            gene expression profiles and data has been deposited in public databases, as well as being available from
+            CSIRO, a number of publications contain results of these experiments. Many of the samples have been
+            collected as part of collaborative projects and/or CRC programs. The main focus of the research undertaken
+            with the samples has been to understand the biological processes underlying important production traits.
+        </summary>
+        <rights type="text">CSIRO manages this collection in collaboration with other agencies. Access rights: Access is
+            restricted to collaborative research organisations. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Foodborne Bacterial Pathogens Collection</title>
+        <link href="http://ws.data.csiro.au/collections/4652" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4652" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4652</id>
+        <published>2012-11-12T01:07:48.000Z</published>
+        <author>
+            <name>Kari Gobius</name>
+        </author>
+        <summary type="text">The Foodborne Bacterial Pathogens Collection is comprised of isolates associated with CSIRO
+            Food Safety research. Shiga toxin producing Escherichia coli (STEC), Salmonella and Campylobacter are
+            zoonotic pathogens naturally associated with food animals. Research knowledge of foodborne pathogen
+            epidemiology, ecology, phylogenetics and virulence potential is essential for managing food safety.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Researcher access by request for scientific
+            collaboration only. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Food Fungal Culture Collection</title>
+        <link href="http://ws.data.csiro.au/collections/4651" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4651" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4651</id>
+        <published>2012-11-12T01:07:25.000Z</published>
+        <author>
+            <name>Ailsa Hocking</name>
+        </author>
+        <summary type="text">The Food Fungal Culture Collection (also known as the FRR Culture Collection) comprises
+            fungal strains of importance in the food and related industries. The current holdings of the collection are
+            approximately 250 yeasts and 4000 filamentous fungi, not all of which are listed in the online catalogue.
+
+            The collection specialises in Penicillium and Aspergillus species and their related teleomorphs,
+            Eupenicillium, Talaromyces, Eurotium and Neosartorya.
+
+            The collection also contains perhaps the most comprehensive collection of xerophilic fungi in the world,
+            since these are of particular importance in the spoilage of processed foods and stored commodities.
+
+            Services associated with the Food Fungal Culture Collection include identification and supply of cultures.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Direct access to the collection is not available.
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian Tree Seed Centre</title>
+        <link href="http://ws.data.csiro.au/collections/4646" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4646" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4646</id>
+        <published>2012-11-12T01:07:14.000Z</published>
+        <author>
+            <name>CSIRO</name>
+        </author>
+        <summary type="text">For over 40 years the Australian Tree Seed Centre (ATSC) has been collecting, researching
+            and supplying quality, fully documented tree seed to both domestic and overseas customers. Collections of
+            seed are sourced from wild populations and genetically improved seed from its own domestication and
+            improvement programs. The ATSC currently holds stock from over 1,000 Australian tree species. Represented
+            genera include: eucalyptus, acacia, casuarina, grevillea, and melaleuca. The ATSC is the only organisation
+            currently storing and conserving a wide range of Australian forestry plantation taxa which are economically
+            important worldwide as raw materials for industrial and domestic use and play a significant role in
+            environmental protection. Seedlots are available as bulk and individual tree collections. Germination tests
+            are carried out on every seedlot in the store and has enabled the ATSC to create germination standards for
+            many of the species. The ATSC maintains a database for all its seedlots with a subset of collection details
+            and germination test results . The database contains detailed collection and germination information for all
+            seedlots. The Australian Tree Seed Centre is a national facility for source identified seed and is managed
+            by CSIRO Plant Industry as a collection and research centre.
+        </summary>
+        <rights type="text">The collection is managed by CSIRO. Access rights: The Tree Seed database and online seed
+            ordering facilities are available to the public. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Collection of Spiders Associated with Australian Cotton Fields (2001-2002)</title>
+        <link href="http://ws.data.csiro.au/collections/4648" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4648" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4648</id>
+        <published>2012-11-12T01:07:04.000Z</published>
+        <author>
+            <name>Mary Whitehouse</name>
+        </author>
+        <summary type="text">This collection identifies the spider communities associated with cotton in different
+            locations throughout Australia. Seven sites extending over 20 degrees of latitude were sampled. At each site
+            1-3 fields were sampled 3-5 times during the cotton growing season using pitfall traps and beatsheets. All
+            the spiders collected were identified to family.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access may be provided to bona fide researchers
+            by negotiation. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Australian Indigenous Relatives of Crops Germplasm Collection</title>
+        <link href="http://ws.data.csiro.au/collections/4645" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4645" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4645</id>
+        <published>2012-11-12T01:06:54.000Z</published>
+        <author>
+            <name>Joe Miller</name>
+        </author>
+        <summary type="text">Australian native relatives of soybean; limited numbers of Australian wild cottons, rice
+            and sorghum.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access is provided to researchers who sign a
+            Material Transfer Agreement with CSIRO. This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">CSIRO National Soil Archive and the National Soil Database (NatSoil)</title>
+        <link href="http://ws.data.csiro.au/collections/4649" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4649" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4649</id>
+        <published>2012-11-08T04:16:49.000Z</published>
+        <author>
+            <name>Linda Karssies</name>
+        </author>
+        <summary type="text">Scientific reference collection of physical samples of Australian soils. In 2003, soil
+            specimen collections from CSIRO sites all over Australia were brought together in Canberra to set up the
+            CSIRO National Soil Archive. Many additional specimens have since been submitted from other CSIRO research
+            projects, state government agencies and other soil research organisations. There are currently over 70,000
+            specimens in the collection, including 30,000 fully archived and 40,000 stored samples still to be
+            processed.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: Access to soil samples is available for CSIRO and
+            others undertaking appropriate public research (generally for non-commercial use). For more information see
+            the user policy on the Archive website: http://www.clw.csiro.au/aclep/archive/. This collection is licensed
+            under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Tissue Collection of Moths (Bacteria Resistant Helicoverpa armigera and Helicoverpa
+            punctigera)
+        </title>
+        <link href="http://ws.data.csiro.au/collections/4663" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4663" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4663</id>
+        <published>2012-09-04T02:32:58.000Z</published>
+        <author>
+            <name>Sharon Downes</name>
+        </author>
+        <summary type="text">Specimens of Bt resistant H. armigera and H. punctigera maintained in a -80 Celsius
+            freezer.
+        </summary>
+        <rights type="text">CSIRO owns this collection in conjunction with the Cotton Research and Development
+            Corporation (CRDC). Access rights: Covered under a situation specific Material Transfer Agreement.
+
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Field Collections of Moths (Helicoverpa armigera and Helicoverpa punctigera)</title>
+        <link href="http://ws.data.csiro.au/collections/4650" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4650" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4650</id>
+        <published>2012-09-04T02:32:46.000Z</published>
+        <author>
+            <name>Sharon Downes</name>
+        </author>
+        <summary type="text">Field collections of Helicoverpa armigera and Helicoverpa punctigera larvae and moths
+            stored in alcohol.
+        </summary>
+        <rights type="text">CSIRO owns this collection in conjunction with the Cotton Research and Development
+            Corporation (CRDC). Access rights: Covered under a situation specific Material Transfer Agreement.
+
+
+            This collection is licensed under a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">Atherton Arboretum</title>
+        <link href="http://ws.data.csiro.au/collections/4644" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4644" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1061" rel="license" type="text/html"/>
+        <id>csiro:4644</id>
+        <published>2012-09-04T02:32:34.000Z</published>
+        <author>
+            <name>Matt Bradford</name>
+        </author>
+        <summary type="text">Collection of living tree specimens. These are mostly rain forest species from the Wet
+            Tropics bioregion, but there are also significant collections from Cape York, Gulf of Carpenteria and the
+            Northern Territory.
+        </summary>
+        <rights type="text">CSIRO owns this collection. Access rights: All members of the community are encouraged to
+            use the facility. Free access during site hours, Monday - Friday, 9am-4pm. This collection is licensed under
+            a CSIRO Data Licence.
+        </rights>
+    </entry>
+    <entry>
+        <title type="text">"The Insects of Australia" full-colour plates 1 to 8</title>
+        <link href="http://ws.data.csiro.au/collections/4781" rel="self" type="application/xml"/>
+        <link href="https://data.csiro.au/dap/landingpage?pid=csiro%3A4761" rel="alternate" type="text/html"
+              hreflang="en"/>
+        <link href="http://ws.data.csiro.au/licences/1044" rel="license" type="text/html"/>
+        <id>csiro:4761</id>
+        <published>2012-03-02T00:45:37.000Z</published>
+        <author>
+            <name>Beth Mantle</name>
+        </author>
+        <summary type="text">This collection is comprised of high-resolution scans from the eight full-colour plates in
+            the CSIRO publication "The Insects of Australia - a textbook for students and research workers, Volumes I
+            and II, 2nd Edition".&#xd;
+            Plate 1: Odonata (dragonflies)&#xd;
+            Plate 2: Mantodea (mantids), Blattodea (cockroaches), Dermaptera (earwigs), Orthoptera (grasshoppers,
+            crickets and katydids).&#xd;
+            Plate 3: Hemiptera (bugs)&#xd;
+            Plate 4: Coleoptera (beetles)&#xd;
+            Plate 5: Coleoptera (beetles), Diptera (flies), Hymenoptera (bees, ants and wasps).&#xd;
+            Plate 6: Batesian Mimicry.&#xd;
+            Plate 7: Lepidoptera (butterflies and moths)&#xd;
+            Plate 8: Lepidoptera (butterflies and moths)&#xd;
+            A ninth plate, depicting termite heads, has been included in this collection but was not published in the
+            final volumes.
+        </summary>
+        <rights type="text">All rights (including copyright) CSIRO Australia 2012. This collection is licensed under a
+            Creative Commons Attribution-Noncommercial-No Derivatives Licence.
+        </rights>
+    </entry>
+</feed>

@@ -87,28 +87,32 @@ class DataRepositoryService {
      *
      * @param dr The data repository
      * @param since When to scan from
+     * @param username The user that is responsible for this
      *
      * @return A list of modified candidates
      */
-    List<CandidateDataResource> scan(DataRepository dr, Date since) {
-        Timestamp now = new Timestamp()
+    List<CandidateDataResource> scan(DataRepository dr, Date since, String username) {
         Scanner scanner = dr.createScanner()
         def query = CandidateDataResource.where { dataProvider.uid == dr.dataProvider.uid }
-        Map<String, CandidateDataResource> existing = query.list().collectEntries { [it.connectionParameters, it] }
+        Map<String, CandidateDataResource> existing = query.list().collectEntries { [it.guid, it] }
         List<CandidateDataResource> candidates = []
 
         for (CandidateDataResource cdr: scanner.scan(since)) {
-            def prev = existing.get(cdr.connectionParameters)
+            def prev = existing.get(cdr.guid)
 
+            log.debug "Candidiate ${cdr.guid} with existing ${prev?.uid}"
             if (prev) {
                 if (prev.lifecycle == "Loaded" && (!prev.lastModified || prev.lastModified.before(cdr.lastModified))) {
                     log.debug "Loaded candidate ${prev.uid} has been modified"
                     prev.lastModified = cdr.lastModified
+                    prev.userLastModified = username
                     candidateService.event(prev, CandidateService.UPDATE_EVENT)
                     candidates << prev
                 }
             } else {
-                cdr = candidateService.insert(cdr)
+                cdr.userLastModified = username
+                cdr = candidateService.insertNew(cdr)
+                cdr = candidateService.event(CandidateService.CANDIDATE_EVENT, cdr)
                 candidates << cdr
             }
         }

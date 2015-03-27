@@ -1,8 +1,11 @@
 package au.org.ala.collectory.datarepo.plugin
 
 import au.org.ala.collectory.DataController
+import au.org.ala.collectory.ProviderGroup
 import au.org.ala.collectory.datarepo.sources.NullScanner
+import au.org.ala.util.ISO8601Helper
 import grails.converters.JSON
+import grails.converters.XML
 import org.codehaus.groovy.grails.plugins.orm.auditable.AuditLogEvent
 import org.codehaus.groovy.grails.web.servlet.HttpHeaders
 
@@ -10,6 +13,8 @@ import org.codehaus.groovy.grails.web.servlet.HttpHeaders
  * A controller that allows access to candidate data
  */
 class DataRepositoryController {
+    static final API_KEY_COOKIE = "ALA-API-Key"
+
     def dataRepositoryService
     def collectoryAuthService
 
@@ -109,20 +114,6 @@ class DataRepositoryController {
         redirect(action: "list")
     }
 
-    def scan = {
-        log.debug "Scan ${params.uid} from ${params.since}"
-        def instance = DataRepository.findByUid(params.uid)
-        def since = params.since ? CandidateDataResource.LAST_CHECKED_FORMAT.parse(params.since) : null
-
-        if (!instance) {
-            flash.message = "${message(code: 'default.not.found.message', args: [message(code: 'dataRepository.label', default: 'Data Repository'), params.uid])}"
-            redirect(action: "list")
-        } else {
-            def candidates = dataRepositoryService.scan(instance, since)
-            render(view: instance.hasErrors() ? 'edit' : 'show', model: [instance: instance, changes: getChanges(instance.uid),  events: candidateService.getEvents(instance)])
-        }
-    }
-
     /**
      * Return headers as if GET had been called - but with no payload.
      *
@@ -178,6 +169,32 @@ class DataRepositoryController {
                 return wsError(dr.errors)
             addContentLocation dr
             return render(status:200, text: "Updated data repository ${dr.uid}")
+        }
+    }
+
+    def scan = {
+        def apiKey = request.cookies.find { cookie -> cookie.name == API_KEY_COOKIE }
+        def keyCheck = apiKey ? collectoryAuthService.checkApiKey(apiKey.value) : null
+        def username = keyCheck?.userEmail ?: collectoryAuthService.username()
+        def admin = keyCheck?.valid || collectoryAuthService.userInRole(ProviderGroup.ROLE_ADMIN)
+        def since = params.since ? ISO8601Helper.parseTimestamp(params.since) : null
+
+        log.debug "Access via apikey: ${keyCheck}, user ${username}, admin ${admin}"
+        if (!admin)
+            return wsError("Scan requires admin role")
+        if (!params.uid)
+            return wsError("Requires repository uid")
+        log.debug "Scan with uid ${params.uid}"
+        def instance = DataRepository.findByUid(params.uid)
+        if (!instance)
+            return wsError("Invalid uid ${params.uid}")
+        def updates = dataRepositoryService.scan(instance, since, username)
+        log.info "${updates.size()} candidates to update for ${params.uid}"
+        response.addHeader HttpHeaders.VARY, HttpHeaders.ACCEPT
+        withFormat {
+            text { render (contentType: 'text/plain', text: updates.findAll({ dr -> dr.uid != null }).collect({ dr -> dr.uid }).join("\n")) }
+            xml { render updates as XML }
+            json { render updates as JSON }
         }
     }
 

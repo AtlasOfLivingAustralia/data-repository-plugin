@@ -63,8 +63,9 @@
                     code="candidate.show.lifecycle"/>:</span> ${fieldValue(bean: instance, field: "lifecycle")}</p>
 
             <!-- Issue management -->
-            <p><span class="category"><g:message code="candidate.show.issue"/>:</span> <cl:externalLink
-                    href="${publicIssueUrl}"/></p>
+            <p><span class="category"><g:message code="candidate.show.issue"/>:</span>
+                <cl:valueOrOtherwise value="${instance.issueId}"><a href="${publicIssueUrl}">${fieldValue(bean: instance, field: "issueId")}</a></cl:valueOrOtherwise>
+            </p>
 
             <!-- Provider -->
             <p>

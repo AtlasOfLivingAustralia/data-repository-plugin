@@ -156,8 +156,8 @@ class GitHub extends IssueManagementSystem {
     void changeState(String id, String state) {
         def http = builder("/repos${repository}/issues/${id}")
 
-        log.debug("Set state ${state} on issue ${id}")
-        http.request(Method.PUT) { req ->
+        log.debug("Set state ${state} on issue ${id} - ${http.uri}")
+        http.request(Method.POST) { req ->
             body = [state: state]
             response.success = { resp, json ->
                 log.info "Set ${state} on ${id} response: ${json}"

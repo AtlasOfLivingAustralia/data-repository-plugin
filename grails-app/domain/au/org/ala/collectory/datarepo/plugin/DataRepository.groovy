@@ -41,6 +41,14 @@ class DataRepository implements Serializable {
 
     static final auditable = [ignore: ['version','dateCreated','lastUpdated','userLastModified']]
 
+    static mapping = {
+        sort: 'name'
+        connectionParameters type: 'text'
+        pubDescription type: "text"
+        techDescription type: "text"
+        notes type: "text"
+    }
+
     static final constraints = {
         guid(nullable:true, maxSize:100)
         uid(blank:false, maxSize:20)
