@@ -22,10 +22,10 @@ class StateMachineTest extends Specification {
         def state = machine.states["state-1"]
         state != null
         state.name == "state-1"
-        state.titleKey == null
-        state.title == null
-        state.descriptionKey == null
-        state.description == null
+        state.titleKey == "noKey"
+        state.title == "state-1"
+        state.descriptionKey == "noKey"
+        state.description == ""
         state.tags == null
         state.action == null
     }
@@ -66,10 +66,10 @@ class StateMachineTest extends Specification {
         def event = machine.events["event-1"]
         event != null
         event.name == "event-1"
-        event.titleKey == null
-        event.title == null
-        event.descriptionKey == null
-        event.description == null
+        event.titleKey == "noKey"
+        event.title == "event-1"
+        event.descriptionKey == "noKey"
+        event.description == ""
         event.tags == null
         event.external == true
     }
@@ -114,10 +114,9 @@ class StateMachineTest extends Specification {
         def transition = machine.transitions[state][event]
         transition != null
         transition.name == "state-1 -> event-1 -> state-2"
-        transition.titleKey == null
-        transition.title == null
-        transition.descriptionKey == null
-        transition.description == null
+        transition.titleKey == "noKey"
+        transition.title == "state-1 -> event-1 -> state-2"
+        transition.descriptionKey == "noKey"
         transition.tags == null
         transition.action == null
     }
