@@ -20,6 +20,14 @@ class ISO8601Helper {
             new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZZZ"),
             new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:sszzz"),
             new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSXXX"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSZZZ"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSSzzz"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ssXXX"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ssZZZ"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:sszzz"),
+            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
     ]
 
     synchronized static Timestamp parseTimestamp(String timestamp) {

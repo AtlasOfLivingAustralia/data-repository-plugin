@@ -28,6 +28,10 @@ class DataRepositorySpec extends Specification {
     static final USER1 = "nobody@nowhere.com.xx"
     static final VERYLONGSTRING = "A".multiply(2048)
     static final SCANNER1 = NullScanner.class
+    static final CITATION1 = "Somewhere special"
+    static final RIGHTS1 = "All rights reserved"
+    static final LICENSE_TYPE1 = "CC BY"
+    static final LICENSE_VERSION1 = "3.0"
 
     DataRepository repository
 
@@ -40,6 +44,10 @@ class DataRepositorySpec extends Specification {
                 techDescription: TECDESC1,
                 notes: NOTES1,
                 websiteUrl: WEBSITE1,
+                rights: RIGHTS1,
+                citation: CITATION1,
+                licenseType: LICENSE_TYPE1,
+                licenseVersion: LICENSE_VERSION1,
                 userLastModified: USER1,
                 lastChecked: CHECKED1,
                 connectionParameters: CONNECTION1,
@@ -70,6 +78,10 @@ class DataRepositorySpec extends Specification {
         restored.pubDescription == PUBDESC1
         restored.techDescription == TECDESC1
         restored.websiteUrl == WEBSITE1
+        restored.rights == RIGHTS1
+        restored.citation == CITATION1
+        restored.licenseType == LICENSE_TYPE1
+        restored.licenseVersion == LICENSE_VERSION1
         restored.lastChecked == CHECKED1
         restored.notes == NOTES1
         restored.connectionParameters == CONNECTION1
@@ -193,4 +205,25 @@ class DataRepositorySpec extends Specification {
         then:
         repository.errors.hasErrors() == false
     }
+
+
+    void testValidate13() {
+        setup:
+        repository.licenseType = "NothingToSeeHere"
+        when:
+        repository.validate()
+        then:
+        repository.errors.hasErrors() == true
+    }
+
+    void testValidate14() {
+        setup:
+        repository.licenseType = null
+        when:
+        repository.validate()
+        then:
+        repository.errors.hasErrors() == false
+    }
+
 }
+

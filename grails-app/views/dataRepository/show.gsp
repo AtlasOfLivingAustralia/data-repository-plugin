@@ -45,8 +45,9 @@
                 <p><span class="category"><g:message code="providerGroup.uid.label" />:</span> ${fieldValue(bean: instance, field: "uid")}</p>
 
                 <!-- Web site -->
-                <p><span class="category"><g:message code="dataresource.show.website"/>:</span> <cl:externalLink
-                        href="${fieldValue(bean: instance, field: 'websiteUrl')}"/></p>
+                <p><span class="category"><g:message code="dataresource.show.website"/>:</span>
+                    <cl:valueOrOtherwise value="${instance.websiteUrl}"><a href="${instance.websiteUrl}">${fieldValue(bean: instance, field: "websiteUrl")}</a></cl:valueOrOtherwise>
+                </p>
 
                 <!-- Provider -->
                 <p>
@@ -76,6 +77,23 @@
                 <cl:formattedText body="${instance.techDescription?:'Not provided'}"/>
 
               </div>
+
+                <!-- Citation and rights -->
+                <div class="show-section well">
+                    <h2><g:message code="dataresource.show.title04" /></h2>
+
+                    <!-- citation -->
+                    <p><span class="category"><g:message code="dataResource.citation.label" />: </span> ${fieldValue(bean: instance, field: "citation")}</p>
+
+                    <!-- rights -->
+                    <p><span class="category"><g:message code="dataResource.rights.label" />: </span> ${fieldValue(bean: instance, field: "rights")}</p>
+
+                    <!-- license -->
+                    <p><span class="category"><g:message code="dataResource.licenseType.label" />: </span> <cl:displayLicenseType type="${instance.licenseType}"/></p>
+
+                    <!-- license version -->
+                    <p><span class="category"><g:message code="dataResource.licenseVersion.label" />: </span> ${fieldValue(bean: instance, field: "licenseVersion")}</p>
+                </div>
 
               <div class="show-section well">
                   <h2><g:message code="dataRepository.show.title.connect" /></h2>

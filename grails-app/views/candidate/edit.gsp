@@ -98,7 +98,7 @@
 
                 <tr class="prop">
                     <td valign="top" class="name">
-                        <label for="websiteUrl"><g:message code="candidate.issue.label" default="Issue"/></label>
+                        <label for="issueId"><g:message code="candidate.issue.label" default="Issue"/></label>
                     </td>
                     <td valign="top" class="value ${hasErrors(bean: instance, field: 'issueId', 'errors')}">
                         <g:textField name="issueId" maxLength="32" value="${instance?.issueId}"/>
@@ -137,8 +137,61 @@
                     </td>
                     <cl:helpTD/>
                 </tr>
-                <tr class="name"><td colspan="2"><h2><g:message code="candidate.location.label"
-                                                                default="Location"/></h2></td></tr>
+
+                <!-- citation -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="citation"><g:message code="dataResource.citation.label" default="Citation" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: instance, field: 'citation', 'errors')}">
+                        <g:textArea name="citation" cols="40" rows="${cl.textAreaHeight(text:instance.citation)}" value="${instance.citation}" />
+                        <cl:helpText code="dataResource.citation"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <!-- rights -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="rights"><g:message code="dataResource.rights.label" default="Rights" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: command, field: 'rights', 'errors')}">
+                        <g:textArea name="rights" cols="40" rows="${cl.textAreaHeight(text:instance.rights)}" value="${instance?.rights}" />
+                        <cl:helpText code="dataResource.rights"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <!-- license -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="licenseType"><g:message code="dataResource.licenseType.label" default="License type" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: instance, field: 'licenseType', 'errors')}">
+                        <g:select name="licenseType"
+                                  from="${DataResource.ccDisplayList}"
+                                  optionKey="type"
+                                  optionValue="display"
+                                  value="${instance.licenseType}"/>
+                        <cl:helpText code="dataResource.licenseType"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <!-- license version -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="licenseVersion"><g:message code="dataResource.licenseVersion.label" default="License version" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: instance, field: 'licenseVersion', 'errors')}">
+                        <g:select name="licenseVersion"
+                                  from="${['','2.5','3.0']}"
+                                  value="${instance.licenseVersion}"/>
+                        <cl:helpText code="dataResource.licenseVersion"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
                 <tr class="prop">
                     <td valign="top" class="name">
                         <g:message code="address.label" default="Address"/>

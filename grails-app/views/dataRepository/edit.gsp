@@ -112,6 +112,59 @@
                     </td>
                     <cl:helpTD/>
                 </tr>
+                <!-- citation -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="citation"><g:message code="dataResource.citation.label" default="Citation" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: instance, field: 'citation', 'errors')}">
+                        <g:textArea name="citation" cols="40" rows="${cl.textAreaHeight(text:instance.citation)}" value="${instance.citation}" />
+                        <cl:helpText code="dataRepository.citation"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <!-- rights -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="rights"><g:message code="dataResource.rights.label" default="Rights" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: command, field: 'rights', 'errors')}">
+                        <g:textArea name="rights" cols="40" rows="${cl.textAreaHeight(text:instance.rights)}" value="${instance?.rights}" />
+                        <cl:helpText code="dataRepository.rights"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <!-- license -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="licenseType"><g:message code="dataResource.licenseType.label" default="License type" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: instance, field: 'licenseType', 'errors')}">
+                        <g:select name="licenseType"
+                                  from="${DataResource.ccDisplayList}"
+                                  optionKey="type"
+                                  optionValue="display"
+                                  value="${instance.licenseType}"/>
+                        <cl:helpText code="dataRepository.licenseType"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
+
+                <!-- license version -->
+                <tr class="prop">
+                    <td valign="top" class="name">
+                        <label for="licenseVersion"><g:message code="dataResource.licenseVersion.label" default="License version" /></label>
+                    </td>
+                    <td valign="top" class="value ${hasErrors(bean: instance, field: 'licenseVersion', 'errors')}">
+                        <g:select name="licenseVersion"
+                                  from="${['','2.5','3.0']}"
+                                  value="${instance.licenseVersion}"/>
+                        <cl:helpText code="dataRepository.licenseVersion"/>
+                    </td>
+                    <cl:helpTD/>
+                </tr>
 
                 <tr class="prop">
                     <td valign="top" class="name">

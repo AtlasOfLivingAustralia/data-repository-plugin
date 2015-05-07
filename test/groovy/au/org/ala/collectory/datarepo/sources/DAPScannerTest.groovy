@@ -44,6 +44,51 @@ class DAPScannerTest extends Specification {
         scanner = repository.createScanner()
     }
 
+    def testFindLicence1() {
+        when:
+            def licence = scanner.findLicence("CC BY")
+        then:
+            licence != null
+            licence.licence == "CC BY"
+            licence.version == null
+    }
+
+    def testFindLicence2() {
+        when:
+        def licence = scanner.findLicence("CC-BY")
+        then:
+        licence != null
+        licence.licence == "CC BY"
+        licence.version == null
+    }
+
+    def testFindLicence3() {
+        when:
+        def licence = scanner.findLicence("Creative Commons Attribution")
+        then:
+        licence != null
+        licence.licence == "CC BY"
+        licence.version == null
+    }
+
+    def testFindLicence4() {
+        when:
+        def licence = scanner.findLicence("Creative Commons Attribution Licence")
+        then:
+        licence != null
+        licence.licence == "CC BY"
+        licence.version == null
+    }
+
+    def testFindLicence5() {
+        when:
+        def licence = scanner.findLicence("Creative Commons Attribution Sharealike 3.0")
+        then:
+        licence != null
+        licence.licence == "CC BY-SA"
+        licence.version == "3.0"
+    }
+
     def testPageUrl1() {
         expect:
             scanner.pageUrl(1) == "http://ws.data.csiro.au/collections?rpp=100&p=1&soud=true&sb=RECENT&q=specimen"

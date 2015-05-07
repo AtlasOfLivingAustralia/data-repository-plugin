@@ -145,6 +145,7 @@ class DAPScanner extends Scanner {
             return null;
         def data = getContent(link.@href)
         def candidate = new CandidateDataResource()
+        def licence = findLicence(data.licence?.text()) // Note correct spelling of licence: You license someone with a licence
 
         candidate.dataProvider = repository.dataProvider
         candidate.guid = data.id?.text().trim()
@@ -154,6 +155,15 @@ class DAPScanner extends Scanner {
         candidate.pubDescription = data.description?.text().trim()
         candidate.techDescription = data.keywords?.text().trim()
         candidate.websiteUrl = data.landingPage?.@href?.text().trim() ?: data.self?.text().trim()
+        candidate.rights = data.rights?.text().trim() ?: repository.rights
+        candidate.citation = data.attributionStatement?.text().trim() ?: repository.citation
+        candidate.licenseType = licence.licence ?: repository.licenseType
+        candidate.licenseVersion = licence.version ?: repository.licenseVersion
+        if (candidate.licenseType == "other") {
+            candidate.licenseVersion = null
+            if (data.licence)
+                candidate.rights = (candidate.rights ?: "") + "\n" + data.licence.text()
+        }
         candidate.userLastModified = repository.name
         return candidate
     }

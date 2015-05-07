@@ -1,16 +1,20 @@
 {
    "uid": "dx1",
+   "citation": "Somewhere special",
    "dataProvider": null,
    "lastChecked": "1970-01-04T11:20:00Z",
+   "rights": "All rights reserved",
    "lastUpdated": null,
    "connectionParameters": {"uri": "nowhere@at.all"},
    "guid": "urn:lsid:ala.org.au:dr:1",
-   "pubDescription": "Public description 1",
    "scannerClass": "au.org.ala.collectory.datarepo.sources.NullScanner",
+   "pubDescription": "Public description 1",
    "name": "Test repository 1",
-   "techDescription": "Technical description 1",
    "dateCreated": null,
+   "techDescription": "Technical description 1",
    "userLastModified": "nobody@nowhere.com.xx",
    "notes": "First notes",
-   "websiteUrl": "http://www.nowhere.com.xx"
+   "websiteUrl": "http://www.nowhere.com.xx",
+   "licenseVersion": "3.0",
+   "licenseType": "CC BY"
 }

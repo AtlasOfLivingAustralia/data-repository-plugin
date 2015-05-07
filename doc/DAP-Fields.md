@@ -15,7 +15,7 @@
 | dap:keywords | | Separated by semi-colons |
 | dap:relatedMaterials | | TBD |
 | dap:licence | | Text licence |
-| dap:link[@rel='licence'] | licenseType, licenseVersion | License is a URL, needs to be mapped onto standard ALA terms |
+| dap:link[@rel='licence'] | licenseType, licenseVersion | Licence is a URL, needs to be mapped onto standard ALA terms |
 | dap:organisations/dap:organisation | institution | Multiple institutions? |
 | dap:attributionStatement | citation | |
 | dap:rights | rights | |

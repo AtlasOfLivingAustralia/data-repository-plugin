@@ -275,6 +275,10 @@ class CandidateService {
             email = dr.email
             phone = dr.phone
             websiteUrl = dr.websiteUrl
+            rights = dr.rights
+            citation = dr.citation
+            licenseType = dr.licenseType
+            licenseVersion = dr.licenseVersion
             alaPublicUrl = (grailsApplication.config.grails.serverURL ?: "") + dr.buildRelativeUrl()
             issueId = dr.issueId
             issueUrl = issueManagementService.publicIssueUrl(dr)
@@ -363,7 +367,7 @@ class CandidateService {
         return cdr
     }
 
-    def createDataResourceAction(cdr) {
+    def createDataResourceAction(CandidateDataResource cdr) {
         DataResource dr = cdr.dataResource;
 
         if (dr == null) {
@@ -378,6 +382,10 @@ class CandidateService {
                     longitude: cdr.longitude,
                     state: cdr.state,
                     websiteUrl: cdr.websiteUrl,
+                    rights: cdr.rights,
+                    citation: cdr.citation,
+                    licenseType: cdr.licenseType,
+                    licenseVersion: cdr.licenseVersion,
                     email: cdr.email,
                     phone: cdr.phone,
                     notes: cdr.notes,
@@ -386,6 +394,8 @@ class CandidateService {
                     userLastModified: collectoryAuthService?.username() ?: "Candidate Service"
 
             )
+            dr.licenseType = cdr.licenseType ?: dr.licenseType // Blat intialised by dr
+            dr.licenseVersion = cdr.licenseVersion ?: dr.licenseVersion
             dr.validate()
             if (dr.hasErrors()) {
                 dr.errors.every { err -> log.warn err }

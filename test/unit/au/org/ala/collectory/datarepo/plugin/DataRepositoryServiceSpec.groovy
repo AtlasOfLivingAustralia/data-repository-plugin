@@ -1,8 +1,5 @@
 package au.org.ala.collectory.datarepo.plugin
 
-import au.org.ala.collectory.datarepo.plugin.CandidateDataResource
-import au.org.ala.collectory.datarepo.plugin.DataRepository
-import au.org.ala.collectory.datarepo.issues.TestIssues
 import au.org.ala.util.ResourceMixin
 import grails.converters.JSON
 import grails.test.mixin.Mock
@@ -12,8 +9,6 @@ import grails.test.mixin.web.ControllerUnitTestMixin
 import org.apache.log4j.*
 import org.codehaus.groovy.grails.commons.ConfigurationHolder
 import org.springframework.test.context.ContextConfiguration
-import org.springframework.transaction.PlatformTransactionManager
-import org.springframework.transaction.TransactionStatus
 import spock.lang.Specification
 
 import static au.org.ala.collectory.datarepo.plugin.DataRepositorySpec.*
@@ -47,6 +42,10 @@ class DataRepositoryServiceSpec extends Specification {
                 techDescription: TECDESC1,
                 notes: NOTES1,
                 websiteUrl: WEBSITE1,
+                rights: RIGHTS1,
+                citation: CITATION1,
+                licenseType: LICENSE_TYPE1,
+                licenseVersion: LICENSE_VERSION1,
                 userLastModified: USER1,
                 lastChecked: CHECKED1,
                 connectionParameters: CONNECTION1,
@@ -76,6 +75,10 @@ class DataRepositoryServiceSpec extends Specification {
         repository.pubDescription == PUBDESC1
         repository.techDescription == TECDESC1
         repository.websiteUrl == WEBSITE1
+        repository.rights == RIGHTS1
+        repository.citation == CITATION1
+        repository.licenseType == LICENSE_TYPE1
+        repository.licenseVersion == LICENSE_VERSION1
         repository.notes == NOTES1
         repository.scannerClass == SCANNER1
         repository.connectionParameters == DataRepositorySpec.CONNECTION1
@@ -101,6 +104,10 @@ class DataRepositoryServiceSpec extends Specification {
         repository.pubDescription == PUBDESC1
         repository.techDescription == TECDESC1
         repository.websiteUrl == WEBSITE1
+        repository.rights == RIGHTS1
+        repository.citation == CITATION1
+        repository.licenseType == LICENSE_TYPE1
+        repository.licenseVersion == LICENSE_VERSION1
         repository.notes == NOTES1
         repository.connectionParameters == DataRepositorySpec.CONNECTION1
         repository.scannerClass == SCANNER1

@@ -1,6 +1,7 @@
 package au.org.ala.collectory.datarepo.plugin
 
 import au.org.ala.collectory.DataProvider
+import au.org.ala.collectory.DataResource
 import au.org.ala.collectory.datarepo.sources.Scanner
 import au.org.ala.util.ISO8601Helper
 import org.codehaus.groovy.grails.web.json.JSONObject
@@ -27,6 +28,14 @@ class DataRepository implements Serializable {
     String techDescription
     /** The website URL */
     String websiteUrl
+    /** Default rights information about the repository */
+    String rights
+    /** The default citation citation */
+    String citation
+    /** The default license type */
+    String licenseType
+    /** The default license version */
+    String licenseVersion
     /** The repository connection string */
     String connectionParameters
     /** The scanner class */
@@ -47,6 +56,8 @@ class DataRepository implements Serializable {
         pubDescription type: "text"
         techDescription type: "text"
         notes type: "text"
+        rights type: "text"
+        citation type: "text"
     }
 
     static final constraints = {
@@ -58,6 +69,10 @@ class DataRepository implements Serializable {
         pubDescription(nullable:true)
         techDescription(nullable:true)
         websiteUrl(nullable:true, maxSize:256)
+        rights(nullable:true)
+        citation(nullable:true)
+        licenseType(nullable:true, maxSize: 45, inList: DataResource.licenseTypeList)
+        licenseVersion(nullable:true, maxSize: 45)
         connectionParameters(nullable:true)
         scannerClass(nullable: false)
         lastChecked(nullable:true)
@@ -65,7 +80,8 @@ class DataRepository implements Serializable {
 
     // String properties for updating
     static final stringProperties = [
-            'guid', 'lifecycle','name','pubDescription', 'techDescription', 'notes', 'websiteUrl'
+            'guid', 'lifecycle','name','pubDescription', 'techDescription', 'notes', 'websiteUrl',
+            'rights', 'citation', 'licenseType', 'licenseVersion'
     ]
 
     static final ROLE_EDITOR = "CANDIDATE_EDITOR"

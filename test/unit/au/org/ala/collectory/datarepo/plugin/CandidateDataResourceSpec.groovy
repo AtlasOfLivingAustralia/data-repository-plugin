@@ -25,6 +25,10 @@ class CandidateDataResourceSpec extends Specification {
     static final USER1 = "nobody@nowhere.com.xx"
     static final VERYLONGSTRING = "A".multiply(2048)
     static final CONNECTION1 = '{"endpoint": "http://localhost:8080/nowhere", "uid": 85}'
+    static final CITATION1 = "Somewhere special"
+    static final RIGHTS1 = "All rights reserved"
+    static final LICENSE_TYPE1 = "CC BY"
+    static final LICENSE_VERSION1 = "3.0"
 
     CandidateDataResource resource
 
@@ -40,6 +44,10 @@ class CandidateDataResourceSpec extends Specification {
                 connectionParameters: CONNECTION1,
                 state: ADDRESS1.state,
                 websiteUrl: WEBSITE1,
+                rights: RIGHTS1,
+                citation: CITATION1,
+                licenseType: LICENSE_TYPE1,
+                licenseVersion: LICENSE_VERSION1,
                 primaryContact: CONTACT1,
                 notes: NOTES1,
                 userLastModified: USER1
@@ -73,6 +81,10 @@ class CandidateDataResourceSpec extends Specification {
         restored.address.buildAddress() == ADDRESS1.buildAddress()
         restored.state == ADDRESS1.state
         restored.websiteUrl == WEBSITE1
+        restored.rights == RIGHTS1
+        restored.citation == CITATION1
+        restored.licenseType == LICENSE_TYPE1
+        restored.licenseVersion == LICENSE_VERSION1
         restored.primaryContact == CONTACT1
         restored.notes == NOTES1
         System.currentTimeMillis() - restored.dateCreated.time < 5000
@@ -230,4 +242,23 @@ class CandidateDataResourceSpec extends Specification {
         then:
         resource.errors.hasErrors() == false
     }
+
+    void testValidate18() {
+        setup:
+        resource.licenseType = "NothingToSeeHere"
+        when:
+        resource.validate()
+        then:
+        resource.errors.hasErrors() == true
+    }
+
+    void testValidate19() {
+        setup:
+        resource.licenseType = null
+        when:
+        resource.validate()
+        then:
+        resource.errors.hasErrors() == false
+    }
+
 }

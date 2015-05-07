@@ -58,6 +58,10 @@ class CandidateServiceSpec extends Specification {
                 address: ADDRESS1,
                 state: ADDRESS1.state,
                 websiteUrl: WEBSITE1,
+                rights: RIGHTS1,
+                citation: CITATION1,
+                licenseType: LICENSE_TYPE1,
+                licenseVersion: LICENSE_VERSION1,
                 primaryContact: CONTACT1,
                 notes: NOTES1,
                 connectionParameters: CONNECTION1,
@@ -92,6 +96,10 @@ class CandidateServiceSpec extends Specification {
         resource.address.buildAddress() == ADDRESS1.buildAddress()
         resource.state == ADDRESS1.state
         resource.websiteUrl == WEBSITE1
+        resource.rights == RIGHTS1
+        resource.citation == CITATION1
+        resource.licenseType == LICENSE_TYPE1
+        resource.licenseVersion == LICENSE_VERSION1
         resource.primaryContact == CONTACT1
         resource.notes == NOTES1
         resource.dateCreated != null
@@ -120,6 +128,10 @@ class CandidateServiceSpec extends Specification {
         resource.address.buildAddress() == ADDRESS1.buildAddress()
         resource.state == ADDRESS1.state
         resource.websiteUrl == WEBSITE1
+        resource.rights == RIGHTS1
+        resource.citation == CITATION1
+        resource.licenseType == LICENSE_TYPE1
+        resource.licenseVersion == LICENSE_VERSION1
         resource.primaryContact == CONTACT1
         resource.notes == NOTES1
         resource.dateCreated != null
@@ -160,6 +172,10 @@ class CandidateServiceSpec extends Specification {
         dr.dataProvider == nr.dataProvider
         dr.notes == nr.notes
         dr.address == nr.address
+        dr.rights == nr.rights
+        dr.citation == nr.citation
+        dr.licenseType == nr.licenseType
+        dr.licenseVersion == nr.licenseVersion
         dr.state == nr.state
         issues.comments.size() == 1
         issues.tags.size() == 0
@@ -183,6 +199,10 @@ class CandidateServiceSpec extends Specification {
         dr.dataProvider == nr.dataProvider
         dr.notes == nr.notes
         dr.address == nr.address
+        dr.rights == nr.rights
+        dr.citation == nr.citation
+        dr.licenseType == nr.licenseType
+        dr.licenseVersion == nr.licenseVersion
         dr.state == nr.state
         issues.comments.size() == 1
         issues.tags.size() == 1

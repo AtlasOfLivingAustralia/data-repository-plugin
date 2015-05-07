@@ -44,6 +44,14 @@ class CandidateDataResource implements Serializable {
     String phone
     /** The website URL */
     String websiteUrl
+    /** Rights information about the repository */
+    String rights
+    /** The expected citation */
+    String citation
+    /** The license type, if available */
+    String licenseType
+    /** The license version, if available */
+    String licenseVersion
     /** The connection to the data source */
     String connectionParameters
     /** Primary contact */
@@ -70,6 +78,8 @@ class CandidateDataResource implements Serializable {
         pubDescription type: "text"
         techDescription type: "text"
         notes type: "text"
+        rights type: "text"
+        citation type: "text"
     }
 
     static final constraints = {
@@ -88,6 +98,10 @@ class CandidateDataResource implements Serializable {
         email(nullable:true, maxSize:256)
         phone(nullable:true, maxSize:45)
         websiteUrl(nullable:true, maxSize:256)
+        rights(nullable:true)
+        citation(nullable:true)
+        licenseType(nullable:true, maxSize: 45, inList: DataResource.licenseTypeList)
+        licenseVersion(nullable:true, maxSize: 45)
         connectionParameters(nullable:true)
         lastModified(nullable: true)
         primaryContact(nullable:true, maxSize: 256)
@@ -98,8 +112,8 @@ class CandidateDataResource implements Serializable {
     // String properties for updating
     static final stringProperties = [
             'guid', 'lifecycle','name','pubDescription','techDescription',
-            'state', 'email', 'phone', 'websiteUrl', 'connectionParameters', 'primaryContact',
-            'notes', 'issueId'
+            'state', 'email', 'phone', 'websiteUrl', 'rights', 'citation', 'licenseType', 'licenseVersion',
+            'connectionParameters', 'primaryContact', 'notes', 'issueId'
     ]
 
     static final numberProperties = [

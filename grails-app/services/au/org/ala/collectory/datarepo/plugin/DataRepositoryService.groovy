@@ -35,6 +35,10 @@ class DataRepositoryService {
             techDescription = dr.techDescription
             notes = dr.notes
             websiteUrl = dr.websiteUrl
+            rights = dr.rights
+            citation = dr.citation
+            licenseType = dr.licenseType
+            licenseVersion = dr.licenseVersion
             connectionParameters = dr.connectionParameters ? JSON.parse(dr.connectionParameters) : null
             scannerClass = dr.scannerClass
             lastChecked = dr.lastChecked

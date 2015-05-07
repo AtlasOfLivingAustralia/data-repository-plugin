@@ -1,5 +1,6 @@
 package au.org.ala.collectory.datarepo.sources
 
+import au.org.ala.collectory.DataResource
 import au.org.ala.collectory.datarepo.plugin.CandidateDataResource
 import au.org.ala.collectory.datarepo.plugin.DataRepository
 
@@ -38,6 +39,38 @@ abstract class Scanner {
         if (idx < 0)
             idx = len - 3
         return string.substring(0, idx) + "..."
+    }
+
+    /**
+     * Try and match what we have to a licence/licence version
+     * To do this, use the CC licences described in DataResource
+     *
+     * @param licence The licence string
+     *
+     * @return The licence and version, if available
+     */
+    def findLicence(String licence) {
+        if (licence == null)
+            return [licence: null, version: null];
+        licence = licence.trim().toLowerCase()
+        if (licence.isEmpty())
+            return [licence: null, version: null];
+        // See if we can extract the version
+        def matcher = licence =~ /([A-Za-z \-\.]+)\s*([\d\.]+)?/
+        if (!matcher.matches())
+            return [licence: "other", version: null]
+        def version = matcher.groupCount() == 2 ? matcher.group(2) : null
+        licence = matcher.group(1).replaceAll("[\\-\\.\\s]+", " ").trim()
+        // Remove trailing "licence" if there is one
+        matcher = licence =~ /([\w\s]*\w+)\s*(?i)Licen[cs]e/
+        if (matcher.matches())
+            licence = matcher.group(1).trim()
+        for (cc in DataResource.ccDisplayList) {
+            def display = cc.display.replaceAll("[\\-\\.\\s]+", " ").toLowerCase()
+            if (licence == cc.type.toLowerCase() || licence == display)
+                return [licence: cc.type, version: version]
+        }
+        return [licence: "other", version: null]
     }
 
     /**
