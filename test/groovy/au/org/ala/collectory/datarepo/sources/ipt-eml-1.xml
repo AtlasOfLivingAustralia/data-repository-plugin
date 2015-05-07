@@ -1,0 +1,170 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.0.2/eml.xsd"
+         packageId="http://ogc-act.csiro.au/ipt/resource.do?id=csiro_ab_zooplankton/v3" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+    <dataset>
+        <alternateIdentifier>http://xxxx.oooo/ipt/resource.do?r=csiro_ab_zooplankton_1</alternateIdentifier>
+        <title xml:lang="eng">CSIRO, Tropical Zooplankton Biomass and Composition, Albatross Bay - Gulf of Carpentaria, North Australia 1986-1988</title>
+        <creator>
+            <individualName>
+                <givenName>Peter</givenName>
+                <surName>Rothlisberg</surName>
+            </individualName>
+            <organizationName>CSIRO</organizationName>
+            <positionName>Scientist</positionName>
+            <address>
+                <deliveryPoint>Ecosciences Precinct, GPO Box 2583</deliveryPoint>
+                <city>Brisbane</city>
+                <administrativeArea>QLD</administrativeArea>
+                <postalCode>4001</postalCode>
+                <country>AU</country>
+            </address>
+            <phone>+61 7 3833 5960</phone>
+            <electronicMailAddress>peter.rothlisberg@csiro.au</electronicMailAddress>
+        </creator>
+        <metadataProvider>
+            <individualName>
+                <surName>CSIRO Marine Data Centre</surName>
+            </individualName>
+            <organizationName>CSIRO</organizationName>
+            <positionName>Data Librarian</positionName>
+            <address>
+                <deliveryPoint>GPO Box 1538</deliveryPoint>
+                <city>Hobart</city>
+                <administrativeArea>TAS</administrativeArea>
+                <postalCode>7001</postalCode>
+                <country>AU</country>
+            </address>
+            <phone>+61 3 6232 5391</phone>
+            <electronicMailAddress>data-requests-hf@csiro.au</electronicMailAddress>
+            <onlineUrl>http://www.cmar.csiro.au/datacentre/</onlineUrl>
+        </metadataProvider>
+        <associatedParty>
+            <individualName>
+                <surName>CSIRO Marine Data Centre</surName>
+            </individualName>
+            <organizationName>CSIRO</organizationName>
+            <positionName>Data Librarian</positionName>
+            <address>
+                <deliveryPoint>GPO Box 1538</deliveryPoint>
+                <city>Hobart</city>
+                <administrativeArea>TAS</administrativeArea>
+                <postalCode>7001</postalCode>
+                <country>AU</country>
+            </address>
+            <phone>+61 3 6232 5391</phone>
+            <electronicMailAddress>data-requests-hf@csiro.au</electronicMailAddress>
+            <onlineUrl>http://www.cmar.csiro.au/datacentre/</onlineUrl>
+            <role>distributor</role>
+        </associatedParty>
+        <pubDate>
+            2014-07-11
+        </pubDate>
+        <language>eng</language>
+        <abstract>
+            <para>The biomass and species composition of tropical zooplankton in Albatross Bay, Gulf of Carpentaria, northern Australia, were examined monthly for three years between March 1986 and March 1988. Zooplankton taxonomic groups were identified to species level where possible, with a primary focus on copepods. Data is stored as mean number of individuals per site. Sampling occurred across 5 sites (Site 1 = Inshore, Site 5 = Offshore, Sites progressed westward). Temperature and salinity were also recorded for many samples.</para>
+        </abstract>
+        <keywordSet>
+            <keyword>Occurrence</keyword>
+            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+        </keywordSet>
+        <keywordSet>
+            <keyword>Observation</keyword>
+            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+        </keywordSet>
+        <additionalInfo>
+            <para>Greenwood, J.G. and Rothlisberg, P.C. (1990). Temporal and spatial variation of neritic zooplankton of the Gulf of Carpentaria, northern Australia. CSIRO/UQ Collaborative Research Grant (55) - Final Report.
+
+                Othaman, B. H. R., Greenwood, J. G. and Rothlisberg, P. C. (1990). The copepod fauna of the Gulf of Carpentaria, and its Indo-West Pacific affinities. Netherlands Journal of Sea Research, 25(4): 561-572.</para>
+        </additionalInfo>
+        <intellectualRights>
+            <para>This dataset is made available under the Open Data Commons Attribution License: http://www.opendatacommons.org/licenses/by/1.0/.</para>
+        </intellectualRights>
+        <distribution scope="document">
+            <online>
+                <url function="information">http://gcmd.gsfc.nasa.gov/records/GCMD_OBISAU_CMAR_ALB_ZOO.html</url>
+            </online>
+        </distribution>
+        <coverage>
+            <geographicCoverage>
+                <geographicDescription>Albatross Bay, Gulf of Carpentaria, Northern Australia</geographicDescription>
+                <boundingCoordinates>
+                    <westBoundingCoordinate>141.15</westBoundingCoordinate>
+                    <eastBoundingCoordinate>141.75</eastBoundingCoordinate>
+                    <northBoundingCoordinate>-12.55</northBoundingCoordinate>
+                    <southBoundingCoordinate>-12.75</southBoundingCoordinate>
+                </boundingCoordinates>
+            </geographicCoverage>
+            <temporalCoverage>
+                <rangeOfDates>
+                    <beginDate>
+                        <calendarDate>1986-03-10</calendarDate>
+                    </beginDate>
+                    <endDate>
+                        <calendarDate>1988-03-18</calendarDate>
+                    </endDate>
+                </rangeOfDates>
+            </temporalCoverage>
+        </coverage>
+        <contact>
+            <individualName>
+                <surName>CSIRO Marine Data Centre</surName>
+            </individualName>
+            <organizationName>CSIRO</organizationName>
+            <positionName>Data Librarian</positionName>
+            <address>
+                <deliveryPoint>GPO Box 1538</deliveryPoint>
+                <city>Hobart</city>
+                <administrativeArea>TAS</administrativeArea>
+                <postalCode>7001</postalCode>
+                <country>AU</country>
+            </address>
+            <phone>+61 3 6232 5391</phone>
+            <electronicMailAddress>data-requests-hf@csiro.au</electronicMailAddress>
+            <onlineUrl>http://www.cmar.csiro.au/datacentre/</onlineUrl>
+        </contact>
+        <project>
+            <title>Albatross Bay, Gulf of Carpentaria, Northern Australia</title>
+            <personnel>
+                <individualName>
+                    <givenName>Peter</givenName>
+                    <surName>Rothlisberg</surName>
+                </individualName>
+                <role>principalInvestigator</role>
+            </personnel>
+            <funding>
+                <para>CSIRO</para>
+            </funding>
+            <studyAreaDescription>
+                <descriptor name="generic"
+                            citableClassificationSystem="false">
+                    <descriptorValue>Albatross Bay in the Gulf od Carpentaria, northern Australia</descriptorValue>
+                </descriptor>
+            </studyAreaDescription>
+            <designDescription>
+                <description>
+                    <para>Zooplankton taxonomic groups were identified to species level where possible, with a primary focus on copepods. Data is stored as mean number of individuals per site. Sampling occurred across 5 sites (Site 1 = Inshore, Site 5 = Offshore, Sites progressed westward). Temperature and salinity were also recorded for many samples.</para>
+                </description>
+            </designDescription>
+        </project>
+    </dataset>
+    <additionalMetadata>
+        <metadata>
+            <gbif>
+                <dateStamp>2014-07-01T03:37:52.769+10:00</dateStamp>
+                <hierarchyLevel>dataset</hierarchyLevel>
+                <citation identifier="CSIRO:AB_ZOO_1986_1988">CSIRO - Albatross Bay zooplankton study 1986-88</citation>
+                <resourceLogoUrl>http://ogc-act.csiro.au/ipt/logo.do?r=csiro_ab_zooplankton</resourceLogoUrl>
+                <collection>
+                    <parentCollectionIdentifier>N/A</parentCollectionIdentifier>
+                    <collectionIdentifier>CSIRO_AB_ZOO_1986_1988</collectionIdentifier>
+                    <collectionName>CSIRO, Tropical Zooplankton Biomass and Composition, Albatross Bay - Gulf of Carpentaria, North Australia 1986-1988</collectionName>
+                </collection>
+                <dc:replaces>http://ogc-act.csiro.au/ipt/resource.do?id=csiro_ab_zooplankton/v2.xml</dc:replaces>
+            </gbif>
+        </metadata>
+    </additionalMetadata>
+</eml:eml>

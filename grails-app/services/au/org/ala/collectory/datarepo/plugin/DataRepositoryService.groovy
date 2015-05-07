@@ -1,6 +1,7 @@
 package au.org.ala.collectory.datarepo.plugin
 
 import au.org.ala.collectory.IdGeneratorService
+import au.org.ala.collectory.ProviderGroup
 import au.org.ala.collectory.datarepo.sources.Scanner
 import grails.converters.JSON
 import grails.transaction.Transactional
@@ -16,6 +17,7 @@ class DataRepositoryService {
     def grailsApplication
     def idGeneratorService
     def candidateService
+    def dataLoaderService
     def messageSource
 
 
@@ -105,6 +107,7 @@ class DataRepositoryService {
         for (CandidateDataResource cdr: scanner.scan(since)) {
             def prev = existing.get(cdr.guid)
 
+            cleanup(cdr)
             log.debug "Candidiate ${cdr.guid} with existing ${prev?.uid}"
             if (prev) {
                 // Have to do this to accommodate milliseconds being lost during timestamps
@@ -133,5 +136,20 @@ class DataRepositoryService {
         dr.lastChecked = now
         dr.save(flush: true)
         return candidates
+    }
+
+    /**
+     * Clean a candidiate data resource up.
+     * <p>
+     * Ensure states are correct, that kind of thing.
+     *
+     * @param cdr The candidiate resource
+     */
+    def cleanup(CandidateDataResource cdr) {
+        if (dataLoaderService != null) {
+            if (cdr.state != null)
+                cdr.state = dataLoaderService.massageState(cdr.state)
+            cdr.state = ProviderGroup.statesList.contains(cdr.state) ? cdr.state : null
+        }
     }
 }

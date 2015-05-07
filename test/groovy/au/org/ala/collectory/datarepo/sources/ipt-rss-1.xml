@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<rss version="2.0"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ipt="http://ipt.gbif.org/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <channel>
+        <title></title>
+        <link>http://xxxx.oooo/ipt</link>
+        <description>Resource metadata </description>
+        <language>en-us</language>
+        <!-- RFC-822 date-time  / Wed, 02 Oct 2010 13:00:00 GMT -->
+        <lastBuildDate>Mon, 15 Dec 2014 18:22:49 +1100</lastBuildDate>
+        <generator>GBIF IPT 2.1.1-r4640</generator>
+        <docs>http://cyber.law.harvard.edu/rss/rss.html</docs>
+        <ttl>15</ttl>
+        <geo:Point>
+            <geo:lat>-42.88636</geo:lat>
+            <geo:long>147.33673</geo:long>
+        </geo:Point>
+        <item>
+            <title>CSIRO, Tropical Zooplankton Biomass and Composition, Albatross Bay - Gulf of Carpentaria, North Australia 1986-1988 - Version 3</title>
+            <link>http://xxxx.oooo/ipt/resource.do?r=csiro_ab_zooplankton_1</link>
+            <description>The biomass and species composition of tropical zooplankton in Albatross Bay, Gulf of Carpentaria, northern Australia, were examined monthly for three years between March 1986 and March 1988. Zooplankton taxonomic groups were identified to species level where possible, with a primary focus on copepods. Data is stored as mean number of individuals per site. Sampling occurred across 5 sites (Site 1 = Inshore, Site 5 = Offshore, Sites progressed westward). Temperature and salinity were also recorded for many samples. &lt;a href="http://xxxx.oooo/ipt/eml.do?r=csiro_ab_zooplankton"&gt;EML&lt;/a&gt;</description>
+            <author>tony.rees@csiro.au</author>
+            <ipt:eml>http://xxxx.oooo/ipt/eml.do?r=csiro_ab_zooplankton_1</ipt:eml>
+            <dc:publisher> CSIRO Marine Data Centre CSIRO&lt;data-requests-hf@csiro.au&gt;</dc:publisher>
+            <dc:creator>Peter Rothlisberg CSIRO&lt;peter.rothlisberg@csiro.au&gt;</dc:creator>
+            <ipt:dwca>http://xxxx.oooo/ipt/archive.do?r=csiro_ab_zooplankton_1</ipt:dwca>
+            <pubDate>Fri, 11 Jul 2014 14:02:29 +1000</pubDate>
+            <guid isPermaLink="false">http://xxxx.oooo/ipt/resource.do?id=csiro_ab_zooplankton_1/v3</guid>
+        </item>
+        <item>
+            <title>CSIRO, Cruise SS200001, Marine Biodiversity, South and Southeast Australia, 2001 - Version 4</title>
+            <link>http://xxxx.oooo/ipt/resource.do?r=csiro_ss200001</link>
+            <description>Biological data collected on Southern Surveyor cruise SS 01/2000. This voyage took place off around the south-east coast of Australia including Victorian, Tasmanian and South Australian waters, in the areas of the south eastern &quot;large marine domain&quot; and the Great Australian Bight Marine Park, during April - May 2000, under the leadership of Rudy Kloser (legs 1 and 3) and Alan Williams (leg 2). Biological data collected on this cruise include fish trawls, benthic sled and video camera data, largely in association with ground truthing for swath mapping carried out on the same voyage. In addition, on leg 2, benthic invertebrates and demersal fishes were collected from the lower continental slope region (approx. depths between 1500 and 2000m) to enable the extension of biophysical regionalisations to a new depth, and on leg 3, collections were made to form a taxonomic inventory of demersal fishes and benthic invertebrates from the Great Australian Bight Marine Protected Area, in areas with contrasting histories of light vs. heavy trawling activity. &lt;a href="http://xxxx.oooo/ipt/eml.do?r=csiro_ss200001"&gt;EML&lt;/a&gt;</description>
+            <author>tony.rees@csiro.au</author>
+            <ipt:eml>http://xxxx.oooo/ipt/eml.do?r=csiro_ss200001</ipt:eml>
+            <dc:publisher> CSIRO Marine Data Centre CSIRO&lt;data-requests-hf@csiro.au&gt;</dc:publisher>
+            <dc:creator>Alan Williams CSIRO&lt;Alan.Williams@csiro.au&gt;</dc:creator>
+            <ipt:dwca>http://xxxx.oooo/ipt/archive.do?r=csiro_ss200001</ipt:dwca>
+            <pubDate>Fri, 11 Jul 2014 14:04:48 +1000</pubDate>
+            <guid isPermaLink="false">http://xxxx.oooo/ipt/resource.do?id=csiro_ss200001/v4</guid>
+        </item>
+    </channel>
+</rss>

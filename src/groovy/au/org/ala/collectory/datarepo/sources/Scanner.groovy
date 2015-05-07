@@ -117,7 +117,8 @@ abstract class Scanner {
     static List<Class<Scanner>> list() {
         [
                 [scannerClass: NullScanner.class, name: "${NullScanner.NAME} - ${NullScanner.DESCRIPTION}"],
-                [scannerClass: DAPScanner.class, name: "${DAPScanner.NAME} - ${DAPScanner.DESCRIPTION}"]
+                [scannerClass: DAPScanner.class, name: "${DAPScanner.NAME} - ${DAPScanner.DESCRIPTION}"],
+                [scannerClass: IPTScanner.class, name: "${IPTScanner.NAME} - ${IPTScanner.DESCRIPTION}"]
         ]
     }
 
