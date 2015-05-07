@@ -53,4 +53,20 @@ An example set of connection parameters are
       "unrestricted": true
     }
 
+### IPT Scanner
+
+The IPT scanner accesses a GBIF Integrated Publishing Toolkit instance via its RSS feed http://www.gbif.org/ipt
+Connection parameters are
+
+| parameter | required | default | description |
+| --------- | -------- | ------- | ----------- |
+| rss | true | | The URL of the rss feed from the IPT instance |
+| keyName | false | catalogNumber | The key term to use when constructing unique keys for an occurrence |
+
+An example set of connection parameters are
+
+    {
+      "rss": "http://ogc-act.csiro.au/ipt/rss.do",
+      "keyName": "catalogNumber"
+    }
 
